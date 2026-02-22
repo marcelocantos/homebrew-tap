@@ -9,6 +9,8 @@ class Mk < Formula
 
   def install
     system "go", "build", *std_go_args(ldflags: "-s -w"), "./cmd/mk"
+    bash_completion.install "completions/mk.bash" => "mk"
+    zsh_completion.install "completions/mk.zsh" => "_mk"
   end
 
   test do
