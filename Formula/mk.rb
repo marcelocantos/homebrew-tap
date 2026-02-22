@@ -1,8 +1,8 @@
 class Mk < Formula
   desc "Build tool with Make's dependency-graph model, minus 48 years of accumulated pain"
   homepage "https://github.com/marcelocantos/mk"
-  url "https://github.com/marcelocantos/mk/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "b68562acf83cabd7fdcc218fb77f3d247e28921a3db4cf6fc3116341b8a4b9ee"
+  url "https://github.com/marcelocantos/mk/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "68e0abd82343361c83f3fd6551a2bf6772d61762ca4e2b5adc9f753a3d4ab014"
   license "Apache-2.0"
 
   depends_on "go" => :build
