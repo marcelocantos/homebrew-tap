@@ -1,16 +1,26 @@
 class Mk < Formula
   desc "Build tool with Make's dependency-graph model, minus 48 years of accumulated pain"
   homepage "https://github.com/marcelocantos/mk"
-  url "https://github.com/marcelocantos/mk/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "68e0abd82343361c83f3fd6551a2bf6772d61762ca4e2b5adc9f753a3d4ab014"
+  version "0.3.0"
   license "Apache-2.0"
 
-  depends_on "go" => :build
+  if OS.mac? && Hardware::CPU.arm?
+    url "https://github.com/marcelocantos/mk/releases/download/v0.3.0/mk-v0.3.0-darwin-arm64.tar.gz"
+    sha256 "69967e3d6d6898b83d101f7d76a5977a6f62bb03413b1e3c4ba0974748018a48"
+  end
+
+  if OS.linux? && Hardware::CPU.intel?
+    url "https://github.com/marcelocantos/mk/releases/download/v0.3.0/mk-v0.3.0-linux-amd64.tar.gz"
+    sha256 "a50bbb2284fbc7598e5f1e4325be1987fc1db63415cdb5c4ab738b22c09c8a54"
+  end
+
+  if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+    url "https://github.com/marcelocantos/mk/releases/download/v0.3.0/mk-v0.3.0-linux-arm64.tar.gz"
+    sha256 "0bbc3f006f3d018dedff16920b6dbf2fee44fb94f42452da2a564813e52282ce"
+  end
 
   def install
-    system "go", "build", *std_go_args(ldflags: "-s -w"), "./cmd/mk"
-    bash_completion.install "completions/mk.bash" => "mk"
-    zsh_completion.install "completions/mk.zsh" => "_mk"
+    bin.install "mk"
   end
 
   test do
