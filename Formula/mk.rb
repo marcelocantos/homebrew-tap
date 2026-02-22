@@ -7,6 +7,7 @@ class Mk < Formula
   homepage "https://github.com/marcelocantos/mk"
   url "https://github.com/marcelocantos/mk/archive/refs/tags/v0.4.0.tar.gz"
   sha256 "b892db5403a0332f60867988751e571d9d0f70066a3b19e799ec23726ad0b299"
+  version "0.4.0"
   license "Apache-2.0"
 
   on_macos do
