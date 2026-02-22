@@ -5,27 +5,27 @@
 class Mk < Formula
   desc "Build tool with make's dependency-graph model, minus 48 years of accumulated pai"
   homepage "https://github.com/marcelocantos/mk"
-  url "https://github.com/marcelocantos/mk/archive/refs/tags/v0.5.0.tar.gz"
-  version "0.5.0"
-  sha256 "57eb43784e85b7661dee9661c895169d250ffea18b7a385515ff604eaba0e2c9"
+  url "https://github.com/marcelocantos/mk/archive/refs/tags/v0.6.0.tar.gz"
+  version "0.6.0"
+  sha256 "7421d38a8dbee76f393975ac6837a982b634370cd5655df194e85bed756f8646"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/mk/releases/download/v0.5.0/mk-0.5.0-darwin-arm64.tar.gz"
-      sha256 "09f7fdae1ed5f51697327b71295daed90290b948c967ad69e562143d66b589e6"
+      url "https://github.com/marcelocantos/mk/releases/download/v0.6.0/mk-0.6.0-darwin-arm64.tar.gz"
+      sha256 "2e651eddb6d4605262f075ae1df644360f5a4f12e0e3dbd144508e4b9da56860"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/mk/releases/download/v0.5.0/mk-0.5.0-linux-amd64.tar.gz"
-      sha256 "93421972a5f5bb8933b70d0263e9055b5dfb5b62113b727d3e3f827e56259a58"
+      url "https://github.com/marcelocantos/mk/releases/download/v0.6.0/mk-0.6.0-linux-amd64.tar.gz"
+      sha256 "6fd70ab0a45f6e44802d5f70c204cbfd49730b07f70342db8130d76c642e0c84"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/mk/releases/download/v0.5.0/mk-0.5.0-linux-arm64.tar.gz"
-      sha256 "302b749904b41289974033176acf66e8065f898458629a023ab64afbe9d84997"
+      url "https://github.com/marcelocantos/mk/releases/download/v0.6.0/mk-0.6.0-linux-arm64.tar.gz"
+      sha256 "bf8724af8a1b7c5ebcfcd271e761b98fe80fb6fab14897735e11476ded843f82"
     end
   end
 
