@@ -11,8 +11,10 @@ brew install marcelocantos/tap/<formula>
 ## Available formulae
 
 <!-- project_table_start -->
-| Formula | Description |
-|---------|-------------|
-| [cworkers](Formula/cworkers.rb) | Task broker for Claude Code agent sessions — pre-spawned workers, model routing, conversation context injection |
-| [mk](Formula/mk.rb) | Build tool with Make's dependency-graph model, minus the pain |
+| Project                                               | Description                                                                      | Install                 |
+| ----------------------------------------------------- | -------------------------------------------------------------------------------- | ----------------------- |
+| [cworkers](https://github.com/marcelocantos/cworkers) | Task broker for claude code agent sessions  pre-spawned workers, model routing,  | `brew install cworkers` |
+| [doit](https://github.com/marcelocantos/doit)         | Capability broker for claude code  tiered safety, argument rules, audit logging  | `brew install doit`     |
+| [ged](https://github.com/marcelocantos/ge)            | ge development daemon — dashboard and bridge for game servers and players        | `brew install ged`      |
+| [mk](https://github.com/marcelocantos/mk)             | Build tool with make's dependency-graph model, minus 48 years of accumulated pai | `brew install mk`       |
 <!-- project_table_end -->
