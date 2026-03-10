@@ -12,26 +12,26 @@ class Cworkers < Formula
 
   desc "Task broker for claude code agent sessions  pre-spawned workers, model routing,"
   homepage "https://github.com/marcelocantos/cworkers"
-  url "https://github.com/marcelocantos/cworkers/archive/refs/tags/v0.3.0.tar.gz"
-  sha256 "c28b26215dc7d782f793ea1fbb0b71b560582c38b503a8d84492410d7b418fe5"
+  url "https://github.com/marcelocantos/cworkers/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "54f9dc5f47117402f34cdad45e773f98d68e2c125e1172c91fdbfd39af6fa75c"
   license "NOASSERTION"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/cworkers/releases/download/v0.3.0/cworkers-0.3.0-darwin-arm64.tar.gz"
-      sha256 "030bccced23c8ff23c1e18e437cf80d21e0b7d6f186818528a7333a8ff83fa68"
+      url "https://github.com/marcelocantos/cworkers/releases/download/v0.4.0/cworkers-0.4.0-darwin-arm64.tar.gz"
+      sha256 "914beef62b068841d77f3028aef9df14531717abce60d39172503cc8cc3f4246"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/cworkers/releases/download/v0.3.0/cworkers-0.3.0-linux-amd64.tar.gz"
-      sha256 "09d64fe0c94e87ed3dd7b331c41bb405a992fe8c9758d972aab84d585740446d"
+      url "https://github.com/marcelocantos/cworkers/releases/download/v0.4.0/cworkers-0.4.0-linux-amd64.tar.gz"
+      sha256 "b1c3676996c9c2226e80468f33689cd8fa9b52bd0ed85d2aa826faeb6baa4524"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/cworkers/releases/download/v0.3.0/cworkers-0.3.0-linux-arm64.tar.gz"
-      sha256 "0db6b4a6bf1ef989325f3e9bd902e4c684e44635b1dadbf9881b78ea5e2f518d"
+      url "https://github.com/marcelocantos/cworkers/releases/download/v0.4.0/cworkers-0.4.0-linux-arm64.tar.gz"
+      sha256 "cf44e2f6fdd8c1fb9181a80dedf158f55af56fb7a5b30ae485b51f82069c988b"
     end
   end
 
