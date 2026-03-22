@@ -5,27 +5,27 @@
 class Tern < Formula
   desc "Websocket relay library (go + swift) with e2e encryption and authenticated pairi"
   homepage "https://github.com/marcelocantos/tern"
-  url "https://github.com/marcelocantos/tern/archive/refs/tags/v0.1.0.tar.gz"
-  version "0.1.0"
-  sha256 "8e78ffae77ca60b70d19f289d6456ed1b24d37f82e5e47d5f4c99a2b350c26b0"
+  url "https://github.com/marcelocantos/tern/archive/refs/tags/v0.2.0.tar.gz"
+  version "0.2.0"
+  sha256 "e86eaaddf658198f3941c7956cfcab6487c7e745f98f586a157d098abc716fab"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/tern/releases/download/v0.1.0/tern-0.1.0-darwin-arm64.tar.gz"
-      sha256 "6ffa3f3f8e9120ae632a90972eb4350831e8a580a6d568f6e65c4fb124cbe888"
+      url "https://github.com/marcelocantos/tern/releases/download/v0.2.0/tern-0.2.0-darwin-arm64.tar.gz"
+      sha256 "a0555e11f6da753599a39e5b6171ea1f40b68f2acd26e56d87461ce54824a368"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/tern/releases/download/v0.1.0/tern-0.1.0-linux-amd64.tar.gz"
-      sha256 "c23538705dd42e5d87b33f4cf9b55ef5d197d99da67dbd847cdf5d88f13e26fa"
+      url "https://github.com/marcelocantos/tern/releases/download/v0.2.0/tern-0.2.0-linux-amd64.tar.gz"
+      sha256 "8ff3bc3609dbced37f3b1bf8960ae0bf3e0816602ed9965041504611754d6a14"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/tern/releases/download/v0.1.0/tern-0.1.0-linux-arm64.tar.gz"
-      sha256 "8cff2223998113be65b6e35c90a099dea6839886d5c5854962847ab7eb12d317"
+      url "https://github.com/marcelocantos/tern/releases/download/v0.2.0/tern-0.2.0-linux-arm64.tar.gz"
+      sha256 "1dc05e42f69a55e29f50c1abdfd339fcc95e0e52e12104a3ff6ede133a3b0249"
     end
   end
 
