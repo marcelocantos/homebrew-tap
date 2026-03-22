@@ -7,25 +7,25 @@ class Tern < Formula
   homepage "https://github.com/marcelocantos/tern"
   url "https://github.com/marcelocantos/tern/archive/refs/tags/v0.2.0.tar.gz"
   version "0.2.0"
-  sha256 "e86eaaddf658198f3941c7956cfcab6487c7e745f98f586a157d098abc716fab"
+  sha256 "10d5be4107fca61b89464544f0b0ad29e936d6df5b556218ea00c5604bf609da"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/marcelocantos/tern/releases/download/v0.2.0/tern-0.2.0-darwin-arm64.tar.gz"
-      sha256 "a0555e11f6da753599a39e5b6171ea1f40b68f2acd26e56d87461ce54824a368"
+      sha256 "8de839e9e8555804dc1f7c3bfad0d6715656a8764df70c15eb72ad98a4154f8e"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/marcelocantos/tern/releases/download/v0.2.0/tern-0.2.0-linux-amd64.tar.gz"
-      sha256 "8ff3bc3609dbced37f3b1bf8960ae0bf3e0816602ed9965041504611754d6a14"
+      sha256 "7198bef9ea922d9c0c71af12ab8fb59e27e5991ad8a887dcf0222c48e8a411b8"
     end
 
     on_arm do
       url "https://github.com/marcelocantos/tern/releases/download/v0.2.0/tern-0.2.0-linux-arm64.tar.gz"
-      sha256 "1dc05e42f69a55e29f50c1abdfd339fcc95e0e52e12104a3ff6ede133a3b0249"
+      sha256 "633b0c0d5330dbe633d824bdd2f678e319a1e1648a4ef94aad63483f268060f4"
     end
   end
 
