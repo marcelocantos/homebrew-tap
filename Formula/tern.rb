@@ -5,27 +5,27 @@
 class Tern < Formula
   desc "Webtransport relay library (go + swift + kotlin + typescript) with e2e encryptio"
   homepage "https://github.com/marcelocantos/tern"
-  url "https://github.com/marcelocantos/tern/archive/refs/tags/v0.5.0.tar.gz"
-  version "0.5.0"
-  sha256 "d80d0c650bdf1a776a703f98a08b4132a17b25220a70629b9d9d995edc6ebecd"
+  url "https://github.com/marcelocantos/tern/archive/refs/tags/v0.6.0.tar.gz"
+  version "0.6.0"
+  sha256 "991d3fe787dedb36badb2004bfa53ee787ec69a70a702c23a44a2912221034f7"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/tern/releases/download/v0.5.0/tern-0.5.0-darwin-arm64.tar.gz"
-      sha256 "722a3582134e5906bc4210ef2e0c2c5152b8ec218b07914fec9bad1aec8781b8"
+      url "https://github.com/marcelocantos/tern/releases/download/v0.6.0/tern-0.6.0-darwin-arm64.tar.gz"
+      sha256 "e0ad2164aa2fc518761d2bd80063496405941ab56a431de480e5f3989deb6aba"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/tern/releases/download/v0.5.0/tern-0.5.0-linux-amd64.tar.gz"
-      sha256 "c9b1ab5d889a397a57a6bf27fad3164ab23a51ee765cb756ecde4a6b3c1cf1f4"
+      url "https://github.com/marcelocantos/tern/releases/download/v0.6.0/tern-0.6.0-linux-amd64.tar.gz"
+      sha256 "5b33b53af6b88060fefb5210c6a952551805ba2d59c13f65c5aa20b3017ede2f"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/tern/releases/download/v0.5.0/tern-0.5.0-linux-arm64.tar.gz"
-      sha256 "d793d26bce954f1d2c85a63db14788258e363c59d814ba4d1fd7071c8e7feb65"
+      url "https://github.com/marcelocantos/tern/releases/download/v0.6.0/tern-0.6.0-linux-arm64.tar.gz"
+      sha256 "2a43f91de4827824df3fec67e56425bcb1af2731ecb56dde205c9644a1857fc0"
     end
   end
 
