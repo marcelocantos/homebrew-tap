@@ -5,27 +5,27 @@
 class Canopy < Formula
   desc "Mcp server for ast-level multi-language code transformations"
   homepage "https://github.com/marcelocantos/canopy"
-  url "https://github.com/marcelocantos/canopy/archive/refs/tags/v0.1.0.tar.gz"
-  version "0.1.0"
-  sha256 "39366697e960c101b51baea6618f3ebf61d24653e0c078e35d947574849bf46e"
+  url "https://github.com/marcelocantos/canopy/archive/refs/tags/v0.2.0.tar.gz"
+  version "0.2.0"
+  sha256 "a9c321d169834499329002f172cae80c66306dd41525feb35e66bea97ab49c14"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/canopy/releases/download/v0.1.0/canopy-0.1.0-darwin-arm64.tar.gz"
-      sha256 "0772ab8abdcecb21eef5cbcf0fe389d00f8ee3384a67024252b37afc0c9b8736"
+      url "https://github.com/marcelocantos/canopy/releases/download/v0.2.0/canopy-0.2.0-darwin-arm64.tar.gz"
+      sha256 "fd8094ec4449bb9503c38141fe2d6137ffbf904dbfe918c96a7bbb1b2fbfee98"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/canopy/releases/download/v0.1.0/canopy-0.1.0-linux-amd64.tar.gz"
-      sha256 "56cfe1bac0a19eb00cb47c629ec9174939a030d585cf363229af97469c52a153"
+      url "https://github.com/marcelocantos/canopy/releases/download/v0.2.0/canopy-0.2.0-linux-amd64.tar.gz"
+      sha256 "119ce6a34d69ccbf4c53e06d573774180ef3a53a65f91c1a18d023f2b85c59c6"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/canopy/releases/download/v0.1.0/canopy-0.1.0-linux-arm64.tar.gz"
-      sha256 "33cd8e961502428dbba9003a9cb2b4a21b87ec02354a0797ac824ad0fa0d409a"
+      url "https://github.com/marcelocantos/canopy/releases/download/v0.2.0/canopy-0.2.0-linux-arm64.tar.gz"
+      sha256 "929de4c2be9ae374ad37983eb305fafeb8a319ef3d61e98d5e690e6c582529d7"
     end
   end
 
