@@ -13,6 +13,7 @@ brew install marcelocantos/tap/<formula>
 <!-- project_table_start -->
 | Project                                               | Description                                                                      | Install                 |
 | ----------------------------------------------------- | -------------------------------------------------------------------------------- | ----------------------- |
+| [canopy](https://github.com/marcelocantos/canopy)     | Mcp server for ast-level multi-language code transformations                     | `brew install canopy`   |
 | [cworkers](https://github.com/marcelocantos/cworkers) | Task broker for claude code agent sessions  pre-spawned workers, model routing,  | `brew install cworkers` |
 | [doit](https://github.com/marcelocantos/doit)         | Capability broker for claude code  tiered safety, argument rules, audit logging  | `brew install doit`     |
 | [ged](https://github.com/marcelocantos/ge)            | ge development daemon — dashboard and bridge for game servers and players        | `brew install ged`      |
