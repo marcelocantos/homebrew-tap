@@ -13,6 +13,7 @@ brew install marcelocantos/tap/<formula>
 <!-- project_table_start -->
 | Project                                               | Description                                                                      | Install                 |
 | ----------------------------------------------------- | -------------------------------------------------------------------------------- | ----------------------- |
+| [bullseye](https://github.com/marcelocantos/bullseye) | Mcp server for convergence targets  desired states ranked by wsjf                | `brew install bullseye` |
 | [canopy](https://github.com/marcelocantos/canopy)     | Mcp server for ast-level multi-language code transformations                     | `brew install canopy`   |
 | [cworkers](https://github.com/marcelocantos/cworkers) | Task broker for claude code agent sessions  pre-spawned workers, model routing,  | `brew install cworkers` |
 | [doit](https://github.com/marcelocantos/doit)         | Capability broker for claude code  tiered safety, argument rules, audit logging  | `brew install doit`     |
