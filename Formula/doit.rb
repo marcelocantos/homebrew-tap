@@ -6,30 +6,32 @@ class Doit < Formula
   desc "Agentic gatekeeper for claude code  three-level policy engine, starlark rules,"
   homepage "https://github.com/marcelocantos/doit"
   url "https://github.com/marcelocantos/doit/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "0b9a39ca613fdff186296dd309911c8beb6a4ef3be664dbb278e2850332c32d1"
+  version "0.2.0"
+  sha256 "82d441e1d28550741987d083ca3a0d092c46195978b4ee76ad4a39dba6b71b93"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/marcelocantos/doit/releases/download/v0.2.0/doit-0.2.0-darwin-arm64.tar.gz"
-      sha256 "da129aff1551e0823ff0594b4744c8b0c055e2fd464845128c020923267dc32b"
+      sha256 "b9675119a1bde7e87efc1ff69be423e21aaab661e0b4c0bb055ddd9d6f4a419e"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/marcelocantos/doit/releases/download/v0.2.0/doit-0.2.0-linux-amd64.tar.gz"
-      sha256 "d640fbb2a246e2714210a765ca5437d7ef95158628814ea8ea42f268564950a1"
+      sha256 "e724a6aa6c95df1816c56d8e85c2906d7cd2b38776518ca0dce711e16d5880be"
     end
 
     on_arm do
       url "https://github.com/marcelocantos/doit/releases/download/v0.2.0/doit-0.2.0-linux-arm64.tar.gz"
-      sha256 "67d3bcef7a6a629bfd8219fe01f762ac7d801b29803a5695448705c4ede55ef2"
+      sha256 "b8ce5bfcf3ae864a34d06374f831fc1b725861540454768094f9ea2ab7b9cb91"
     end
   end
 
   def install
     bin.install "doit" => "doit"
+    bin.install "doit-mcp" => "doit-mcp"
   end
 
   test do

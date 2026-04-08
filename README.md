@@ -16,7 +16,7 @@ brew install marcelocantos/tap/<formula>
 | [bullseye](https://github.com/marcelocantos/bullseye)       | Mcp server for managing targets  desired states ranked by wsjf                   | `brew install bullseye`    |
 | [canopy](https://github.com/marcelocantos/canopy)           | Mcp server for ast-level multi-language code transformations                     | `brew install canopy`      |
 | [cworkers](https://github.com/marcelocantos/cworkers)       | Task broker for claude code agent sessions  pre-spawned workers, model routing,  | `brew install cworkers`    |
-| [doit](https://github.com/marcelocantos/doit)               | Capability broker for claude code  tiered safety, argument rules, audit logging  | `brew install doit`        |
+| [doit](https://github.com/marcelocantos/doit)               | Agentic gatekeeper for claude code  three-level policy engine, starlark rules,   | `brew install doit`        |
 | [ged](https://github.com/marcelocantos/ge)                  | ge development daemon — dashboard and bridge for game servers and players        | `brew install ged`         |
 | [mk](https://github.com/marcelocantos/mk)                   | Build tool with make's dependency-graph model, minus 48 years of accumulated pai | `brew install mk`          |
 | [mnemo](https://github.com/marcelocantos/mnemo)             | Claude code transcript memory  mcp server for searching past sessions            | `brew install mnemo`       |
