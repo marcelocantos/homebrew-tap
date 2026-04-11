@@ -18,6 +18,7 @@ brew install marcelocantos/tap/<formula>
 | [cworkers](https://github.com/marcelocantos/cworkers)       | Task broker for claude code agent sessions  pre-spawned workers, model routing,  | `brew install cworkers`    |
 | [doit](https://github.com/marcelocantos/doit)               | Agentic gatekeeper for claude code  three-level policy engine, starlark rules,   | `brew install doit`        |
 | [ged](https://github.com/marcelocantos/ge)                  | ge development daemon — dashboard and bridge for game servers and players        | `brew install ged`         |
+| [mcpbridge](https://github.com/marcelocantos/mcpbridge)     | Transparent wrapper for mcp servers  auto-upgrade without breaking agent sessio  | `brew install mcpbridge`   |
 | [mk](https://github.com/marcelocantos/mk)                   | Build tool with make's dependency-graph model, minus 48 years of accumulated pai | `brew install mk`          |
 | [mnemo](https://github.com/marcelocantos/mnemo)             | Claude code transcript memory  mcp server for searching past sessions            | `brew install mnemo`       |
 | [pigeon](https://github.com/marcelocantos/pigeon)           | Webtransport relay library (go + swift + kotlin + typescript) with e2e encryptio | `brew install pigeon`      |
