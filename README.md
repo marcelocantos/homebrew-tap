@@ -26,7 +26,7 @@ brew install marcelocantos/tap/<formula>
 | [pigeon](https://github.com/marcelocantos/pigeon)           | Webtransport relay library (go + swift + kotlin + c + typescript) with e2e encry | `brew install pigeon`      |
 | [rustuml](https://github.com/marcelocantos/rustuml)         | Rust port of plantuml  single binary, no runtime dependencies                    | `brew install rustuml`     |
 | [sawmill](https://github.com/marcelocantos/sawmill)         | Mcp server for ast-level multi-language code transformations                     | `brew install sawmill`     |
-| [spyder](https://github.com/marcelocantos/spyder)           | Http-based mcp server for cross-platform mobile development workflow orchestrati | `brew install spyder`      |
+| [spyder](https://github.com/marcelocantos/spyder)           | Mcp server for ios and android device orchestration                              | `brew install spyder`      |
 | [sqldeep](https://github.com/marcelocantos/sqldeep)         | C++20 transpiler for json5-like sql syntax to standard sql with database-specifi | `brew install sqldeep`     |
 | [sysinfo-mcp](https://github.com/marcelocantos/sysinfo-mcp) | Lightweight c mcp server exposing macos system information to ai tools           | `brew install sysinfo-mcp` |
 | [tern](https://github.com/marcelocantos/tern)               | Webtransport relay library (go + swift + kotlin + typescript) with e2e encryptio | `brew install tern`        |

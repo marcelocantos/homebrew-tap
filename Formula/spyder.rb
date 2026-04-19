@@ -8,31 +8,32 @@ class Spyder < Formula
     keep_alive true
     log_path var/"log/spyder.log"
     error_log_path var/"log/spyder.log"
+    environment_variables PATH: "/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
   end
 
   desc "Mcp server for ios and android device orchestration"
   homepage "https://github.com/marcelocantos/spyder"
-  url "https://github.com/marcelocantos/spyder/archive/refs/tags/v0.2.0.tar.gz"
-  version "0.2.0"
-  sha256 "29c88b4c061181f304112bd568317729db96ecfc541f45b63139440e092fadd9"
+  url "https://github.com/marcelocantos/spyder/archive/refs/tags/v0.3.0.tar.gz"
+  version "0.3.0"
+  sha256 "ef61c7e4b59517dd509283d8ac155ac78ac5d5d38e4c5ea8e0a8bcb634a7d462"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/spyder/releases/download/v0.2.0/spyder-0.2.0-darwin-arm64.tar.gz"
-      sha256 "820d60df73e378c7d9ab2148d3a5c2686b50995e1e6eb7f7f1016b1f0c33ddad"
+      url "https://github.com/marcelocantos/spyder/releases/download/v0.3.0/spyder-0.3.0-darwin-arm64.tar.gz"
+      sha256 "72fea5cf6bab40ece18e683448e2835cf62acde97f5b126be8b8b7d2e3b2c212"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/spyder/releases/download/v0.2.0/spyder-0.2.0-linux-amd64.tar.gz"
-      sha256 "3ab8314fb0e0bafdc6aed1bbc10d00d0f1659b95e02bb272145bf54fdfafab2a"
+      url "https://github.com/marcelocantos/spyder/releases/download/v0.3.0/spyder-0.3.0-linux-amd64.tar.gz"
+      sha256 "47835c6ecc4a9eadb4358d7cdbda38d890198aeb0c44b4e5b243dfe06f2d25b2"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/spyder/releases/download/v0.2.0/spyder-0.2.0-linux-arm64.tar.gz"
-      sha256 "d1566c6fdd423d9afa6968d8856ec5cf022f0aa9f04ff233bd5606dc83e13d03"
+      url "https://github.com/marcelocantos/spyder/releases/download/v0.3.0/spyder-0.3.0-linux-arm64.tar.gz"
+      sha256 "1b46f1021109a279c62c01756cd8aadac265fbc696b09af360f585024b06407d"
     end
   end
 
