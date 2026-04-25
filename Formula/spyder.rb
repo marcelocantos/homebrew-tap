@@ -13,32 +13,32 @@ class Spyder < Formula
 
   desc "Mcp server for ios and android device orchestration"
   homepage "https://github.com/marcelocantos/spyder"
-  url "https://github.com/marcelocantos/spyder/archive/refs/tags/v0.13.0.tar.gz"
-  version "0.13.0"
-  sha256 "45bac0aef51f0153c10aabd093aaea26c85966d8bbcfbf57fae2300ed9c69cec"
+  url "https://github.com/marcelocantos/spyder/archive/refs/tags/v0.14.0.tar.gz"
+  version "0.14.0"
+  sha256 "65bc1fffe91819b76fa27c55716ab3d9e7514da024cab1c53143d7e189d7036d"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/spyder/releases/download/v0.13.0/spyder-0.13.0-darwin-arm64.tar.gz"
-      sha256 "6cd93e065b49db2c9c2e59e2ee346606059c5a1c6217a7d249c84c6bf27d7d52"
+      url "https://github.com/marcelocantos/spyder/releases/download/v0.14.0/spyder-0.14.0-darwin-arm64.tar.gz"
+      sha256 "dd48cda580ee2d743cbbad392dd5369709a8f8a9a1d6b8842d357ad32dcda1e3"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/spyder/releases/download/v0.13.0/spyder-0.13.0-linux-amd64.tar.gz"
-      sha256 "4ee8f91238a455c7a104ababe2a5a1e655cdb0c81c75c7b83247fd1d04cc3015"
+      url "https://github.com/marcelocantos/spyder/releases/download/v0.14.0/spyder-0.14.0-linux-amd64.tar.gz"
+      sha256 "a405861e47dc2f1b8bad764f3828d4ea430cd86c0cfdba654cfc0b3ba23a19d9"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/spyder/releases/download/v0.13.0/spyder-0.13.0-linux-arm64.tar.gz"
-      sha256 "3c8bfd0edcb8c45e63edb263493edaf4bc4f11435034291fa7baa0c240c7c4a9"
+      url "https://github.com/marcelocantos/spyder/releases/download/v0.14.0/spyder-0.14.0-linux-arm64.tar.gz"
+      sha256 "0f6476f6fac0805888151c832d2f628a141a6d5fec132909c8052a6c207d5288"
     end
   end
 
   def install
-    bin.install "bin/spyder" => "spyder"; libexec.install Dir["libexec/pmd3-bridge"]
+    bin.install "bin/spyder" => "spyder"; libexec.install Dir["libexec/pmd3-bridge"]; libexec.install Dir["libexec/spyder-source"]
   end
 
   test do
