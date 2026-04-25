@@ -5,15 +5,15 @@
 class Pageflip < Formula
   desc "Capture slides from a screen region whenever they change"
   homepage "https://github.com/marcelocantos/pageflip"
-  url "https://github.com/marcelocantos/pageflip/archive/refs/tags/v0.1.0.tar.gz"
-  version "0.1.0"
-  sha256 "09ae047c48c182790b14e4ef6c65fdb2984464cba8f46b1b34b67e8b4206577b"
+  url "https://github.com/marcelocantos/pageflip/archive/refs/tags/v0.2.0.tar.gz"
+  version "0.2.0"
+  sha256 "e76fed6465d46e119307b3a003afa659e0b22d025fc1c549178e6d4df224edcd"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/pageflip/releases/download/v0.1.0/pageflip-0.1.0-darwin-arm64.tar.gz"
-      sha256 "c9f002e4659428c06d539272a0ab22fd399f91ae8d6f2e7d9b247ab46b221df1"
+      url "https://github.com/marcelocantos/pageflip/releases/download/v0.2.0/pageflip-0.2.0-darwin-arm64.tar.gz"
+      sha256 "b68fd72b0d2396e90a61cd8b0795d7758ba2a0be65e62b1636a56f082933283c"
     end
   end
 
