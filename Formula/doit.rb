@@ -5,27 +5,27 @@
 class Doit < Formula
   desc "Agentic gatekeeper for claude code  three-level policy engine, starlark rules,"
   homepage "https://github.com/marcelocantos/doit"
-  url "https://github.com/marcelocantos/doit/archive/refs/tags/v0.7.0.tar.gz"
-  version "0.7.0"
-  sha256 "bde5e7676930f66295af53a72a35fa3ae4d04b96217e74d91ff979a57a68e1fb"
+  url "https://github.com/marcelocantos/doit/archive/refs/tags/v0.8.0.tar.gz"
+  version "0.8.0"
+  sha256 "5f24858f2748e9c0269b3e14b02fd0d9b3ea0966004bdb11d4a768350b6995e2"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/doit/releases/download/v0.7.0/doit-0.7.0-darwin-arm64.tar.gz"
-      sha256 "502b1b5947ccc174f841ca1df6511c1b59886b71ff3b333a86917ccd6d39fa08"
+      url "https://github.com/marcelocantos/doit/releases/download/v0.8.0/doit-0.8.0-darwin-arm64.tar.gz"
+      sha256 "0fdf66dd9e10d01c56119605fd16115e0dbfd2c9a76447c548f2943b29886571"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/doit/releases/download/v0.7.0/doit-0.7.0-linux-amd64.tar.gz"
-      sha256 "c04300f5c442e51a3031d9245aa65a7d3de7da28aafcf623266a9d816418764f"
+      url "https://github.com/marcelocantos/doit/releases/download/v0.8.0/doit-0.8.0-linux-amd64.tar.gz"
+      sha256 "4c6e80096d6a1eb7b71b87dde7101db17408dafd4e0105fa7cc44d2d0d17a7c4"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/doit/releases/download/v0.7.0/doit-0.7.0-linux-arm64.tar.gz"
-      sha256 "5211d4723bf4bfafd5f03c42b7e0d06b6f457bda477671bd36ca15283e32488f"
+      url "https://github.com/marcelocantos/doit/releases/download/v0.8.0/doit-0.8.0-linux-arm64.tar.gz"
+      sha256 "c31567b7d33ba94e2caa0851c5a15331f9d630236fa021f80747a607a2ec8423"
     end
   end
 
