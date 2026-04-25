@@ -9,31 +9,32 @@ class Mnemo < Formula
     log_path var/"log/mnemo.log"
     error_log_path var/"log/mnemo.log"
     working_dir HOMEBREW_PREFIX
+    environment_variables PATH: "#{HOMEBREW_PREFIX}/bin:#{ENV["HOME"]}/.claude/local:/usr/bin:/bin:/usr/sbin:/sbin"
   end
 
   desc "Claude code transcript memory  mcp server for searching past sessions"
   homepage "https://github.com/marcelocantos/mnemo"
-  url "https://github.com/marcelocantos/mnemo/archive/refs/tags/v0.29.0.tar.gz"
-  version "0.29.0"
-  sha256 "ee702a1b29e9bcdc51ffec32a7dea1bde9cb0e288942731d1e790256d9501e32"
+  url "https://github.com/marcelocantos/mnemo/archive/refs/tags/v0.30.0.tar.gz"
+  version "0.30.0"
+  sha256 "7b20adf4d38de6716fb6f6f5af55984c662aef6caa027f8cb2a39c86f049d296"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/mnemo/releases/download/v0.29.0/mnemo-0.29.0-darwin-arm64.tar.gz"
-      sha256 "33acf77521f5a7940501eeb9396f3920e9dad9ad4ac253d1dc74508c6649542c"
+      url "https://github.com/marcelocantos/mnemo/releases/download/v0.30.0/mnemo-0.30.0-darwin-arm64.tar.gz"
+      sha256 "1f260f5fc2c80dd9a2d06c02fc7d2373c82b70633555f2ca5d4e1013a8c2a10f"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/mnemo/releases/download/v0.29.0/mnemo-0.29.0-linux-amd64.tar.gz"
-      sha256 "bd2df43e8377359749b764a4971b7c4fd5a989d70c37faa9f8cf2116cf168fb8"
+      url "https://github.com/marcelocantos/mnemo/releases/download/v0.30.0/mnemo-0.30.0-linux-amd64.tar.gz"
+      sha256 "855b645b78cf7a9946ee0756c4cf158bdaa8dc9fa2ddf91c6191b2af6e4dd17d"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/mnemo/releases/download/v0.29.0/mnemo-0.29.0-linux-arm64.tar.gz"
-      sha256 "607960290971cb7f96a63d65c3386a5d7c29b142792e535128c7423c1eefda79"
+      url "https://github.com/marcelocantos/mnemo/releases/download/v0.30.0/mnemo-0.30.0-linux-arm64.tar.gz"
+      sha256 "ef0fb8bb0512dc6d15731231171de4357261d40c92c735c34f9341478969ab7d"
     end
   end
 
