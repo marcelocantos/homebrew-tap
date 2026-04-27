@@ -42,6 +42,9 @@ class Vellum < Formula
   sha256 "6ee18b63823beaea3a611e45937738f52eea807bc913b26de07df3f9950fee72"
   license "Apache-2.0"
 
+  depends_on "mermaid-cli"
+  depends_on "node"
+
   on_macos do
     on_arm do
       url "https://github.com/marcelocantos/vellum/releases/download/v0.2.0/vellum-0.2.0-darwin-arm64.tar.gz"
@@ -63,6 +66,35 @@ class Vellum < Formula
 
   def install
     bin.install "vellum" => "vellum"
+  end
+
+  def caveats
+    <<~EOS
+      vellum requires Prince (HTML→PDF) which is not in Homebrew core.
+      Install via cask:
+        brew install --cask prince
+      or download from https://www.princexml.com/download/
+    EOS
+  end
+
+  service do
+    run [opt_bin/"vellum", "--mcp"]
+    keep_alive true
+    log_path var/"log/vellum.log"
+    error_log_path var/"log/vellum.log"
+    environment_variables PATH: [
+      "#{HOMEBREW_PREFIX}/bin",
+      "#{HOMEBREW_PREFIX}/sbin",
+      "/usr/local/bin",
+      "#{Dir.home}/.cargo/bin",
+      "#{Dir.home}/.local/bin",
+      "#{Dir.home}/.py/bin",
+      "#{Dir.home}/go/bin",
+      "/usr/bin",
+      "/bin",
+      "/usr/sbin",
+      "/sbin",
+    ].join(":")
   end
 
   test do
