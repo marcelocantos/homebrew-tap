@@ -12,27 +12,27 @@ class Sawmill < Formula
 
   desc "Mcp server for ast-level multi-language code transformations"
   homepage "https://github.com/marcelocantos/sawmill"
-  url "https://github.com/marcelocantos/sawmill/archive/refs/tags/v0.11.0.tar.gz"
-  version "0.11.0"
-  sha256 "23aa6eb191cbca7f4b19f1a80e2161651f14b12301caaa98f6b92861595defb2"
+  url "https://github.com/marcelocantos/sawmill/archive/refs/tags/v0.12.0.tar.gz"
+  version "0.12.0"
+  sha256 "f5b5dbf5885b5a73d62eb31d62aef91934378cf3dc719d86158c720087955f88"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/sawmill/releases/download/v0.11.0/sawmill-0.11.0-darwin-arm64.tar.gz"
-      sha256 "2ad2ec806c26252050fc5ca3aeec59613bb198a9fa9dc6a30852043535271049"
+      url "https://github.com/marcelocantos/sawmill/releases/download/v0.12.0/sawmill-0.12.0-darwin-arm64.tar.gz"
+      sha256 "63a0ec64078db3874f2c043803580cda6228c898c6423a8e0f6da71a5f2724cf"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/sawmill/releases/download/v0.11.0/sawmill-0.11.0-linux-amd64.tar.gz"
-      sha256 "3b0c5c9787a65ad6cdf00eeb4f7627e986f3017d366128da75092905a052c46e"
+      url "https://github.com/marcelocantos/sawmill/releases/download/v0.12.0/sawmill-0.12.0-linux-amd64.tar.gz"
+      sha256 "0052b548dcd6171ee625fe78bbcd62350c0439f3dfc6a7f0ff89a95e27a694e2"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/sawmill/releases/download/v0.11.0/sawmill-0.11.0-linux-arm64.tar.gz"
-      sha256 "95b045995bac9ea41f9684143aac99d422ee1b680fe572d90312bca99cb00f3e"
+      url "https://github.com/marcelocantos/sawmill/releases/download/v0.12.0/sawmill-0.12.0-linux-arm64.tar.gz"
+      sha256 "4c11e76d02643c9d0f33b01ed962e5979d326b7dffb7788fe426f1e32dd75802"
     end
   end
 
