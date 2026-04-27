@@ -12,27 +12,27 @@ class Mcpbridge < Formula
 
   desc "Transparent wrapper for mcp servers  auto-upgrade without breaking agent sessio"
   homepage "https://github.com/marcelocantos/mcpbridge"
-  url "https://github.com/marcelocantos/mcpbridge/archive/refs/tags/v0.5.0.tar.gz"
-  version "0.5.0"
-  sha256 "6abb9d55ef6f262ba5f79ed81a3630494af49cd303e847a2b91577c7f41fdf97"
+  url "https://github.com/marcelocantos/mcpbridge/archive/refs/tags/v0.6.0.tar.gz"
+  version "0.6.0"
+  sha256 "dba7ea9547072acda9ce15a1b8b1a1d45a7c93ba5fa0233b61dc0992930432d5"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/mcpbridge/releases/download/v0.5.0/mcpbridge-0.5.0-darwin-arm64.tar.gz"
-      sha256 "3fb957a10665f37b3509cf8387f7582dd253b3c12848c73c73e8fad3dad3d5f4"
+      url "https://github.com/marcelocantos/mcpbridge/releases/download/v0.6.0/mcpbridge-0.6.0-darwin-arm64.tar.gz"
+      sha256 "f37e8764bd0bf7a4791e2f5b6464a8504b933cd65a591744e2c739c278b03cd1"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/mcpbridge/releases/download/v0.5.0/mcpbridge-0.5.0-linux-amd64.tar.gz"
-      sha256 "8b6a57a619b27983d35e88d4d75ccc4327fccba484a04ef0a926de8c3ecef4ab"
+      url "https://github.com/marcelocantos/mcpbridge/releases/download/v0.6.0/mcpbridge-0.6.0-linux-amd64.tar.gz"
+      sha256 "7d4fcc4a0d07d96ab972abe2133cd4909e6fa346757a60d39fb4a24970fc742c"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/mcpbridge/releases/download/v0.5.0/mcpbridge-0.5.0-linux-arm64.tar.gz"
-      sha256 "e75d4ae0d47c9aa0aa5ed5bc018c3d07427c79782f9b137075a9c5a557a58976"
+      url "https://github.com/marcelocantos/mcpbridge/releases/download/v0.6.0/mcpbridge-0.6.0-linux-arm64.tar.gz"
+      sha256 "b1cf24343ad368e62e31be3f81c178040c334e77b5b3f5cf976f15c5ca8fdf6c"
     end
   end
 
