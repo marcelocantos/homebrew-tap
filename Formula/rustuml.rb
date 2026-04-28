@@ -5,26 +5,26 @@
 class Rustuml < Formula
   desc "Rust port of plantuml  single binary, no runtime dependencies"
   homepage "https://github.com/marcelocantos/rustuml"
-  url "https://github.com/marcelocantos/rustuml/archive/refs/tags/v0.5.0.tar.gz"
-  version "0.5.0"
-  sha256 "26cdfa84aba826761d966bcd915161c7dbe28843185da0006cbdccca3e08b1ec"
+  url "https://github.com/marcelocantos/rustuml/archive/refs/tags/v0.6.0.tar.gz"
+  version "0.6.0"
+  sha256 "59e0b015a82a43a3b167d7ab202a7ffdad5a1bd1783af0d5f085e45eadfa43ae"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/rustuml/releases/download/v0.5.0/rustuml-0.5.0-darwin-arm64.tar.gz"
-      sha256 "461a8a92664ac0a87b81078c18f933efc6f7ea7d84bf6c1ff1d9ca1e6b9a82cf"
+      url "https://github.com/marcelocantos/rustuml/releases/download/v0.6.0/rustuml-0.6.0-darwin-arm64.tar.gz"
+      sha256 "e88f99f563e78445870e0e84f3c059387ef0c8f38737b2c70dc492894aaf48eb"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/rustuml/releases/download/v0.5.0/rustuml-0.5.0-linux-amd64.tar.gz"
-      sha256 "beff2e94a4dcb88556e25982b9a2ae11ce3872eb5096b45149ad5d8b514f303d"
+      url "https://github.com/marcelocantos/rustuml/releases/download/v0.6.0/rustuml-0.6.0-linux-amd64.tar.gz"
+      sha256 "a0df4c25b3ab26b872f4c7741b91761ebcd109dfe70466490be8d29484447b97"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/rustuml/releases/download/v0.5.0/rustuml-0.5.0-linux-arm64.tar.gz"
-      sha256 "71be537f2642b6dd4f4f1539209c7563aae119c193547e84fb3d17302a465774"
+      url "https://github.com/marcelocantos/rustuml/releases/download/v0.6.0/rustuml-0.6.0-linux-arm64.tar.gz"
+      sha256 "2678282a648555a8a87aa179317765797a349e351e3c4a36ee68fb26e1882d3d"
     end
   end
 
