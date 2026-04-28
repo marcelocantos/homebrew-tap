@@ -15,86 +15,43 @@ class Vellum < Formula
     EOS
   end
 
-  service do
-    run [opt_bin/"vellum", "--mcp"]
-    keep_alive true
-    log_path var/"log/vellum.log"
-    error_log_path var/"log/vellum.log"
-    environment_variables PATH: [
-      "#{HOMEBREW_PREFIX}/bin",
-      "#{HOMEBREW_PREFIX}/sbin",
-      "/usr/local/bin",
-      "#{Dir.home}/.cargo/bin",
-      "#{Dir.home}/.local/bin",
-      "#{Dir.home}/.py/bin",
-      "#{Dir.home}/go/bin",
-      "/usr/bin",
-      "/bin",
-      "/usr/sbin",
-      "/sbin",
-    ].join(":")
-  end
-
   desc "Document preparation mcp server  markdown to pdf via goldmark + prince"
   homepage "https://github.com/marcelocantos/vellum"
-  url "https://github.com/marcelocantos/vellum/archive/refs/tags/v0.2.0.tar.gz"
-  version "0.2.0"
-  sha256 "6ee18b63823beaea3a611e45937738f52eea807bc913b26de07df3f9950fee72"
+  url "https://github.com/marcelocantos/vellum/archive/refs/tags/v0.3.0-rc.1.tar.gz"
+  version "0.3.0-rc.1"
+  sha256 "33312952b2918fec1e6da9d5b29bb77c2aba596f011e74b42ddf9c003ccfbe5b"
   license "Apache-2.0"
-
-  depends_on "mermaid-cli"
-  depends_on "node"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/vellum/releases/download/v0.2.0/vellum-0.2.0-darwin-arm64.tar.gz"
-      sha256 "d1d5787d0a3b31780cd2efa5b5e2bac15a2a7af107433f07ab15a453b494934c"
+      url "https://github.com/marcelocantos/vellum/releases/download/v0.3.0-rc.1/vellum-0.3.0-rc.1-darwin-arm64.tar.gz"
+      sha256 "161e5c2305a3ea9265f0640e9d2d979c0f5911d123af6371a854620da5c2e621"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/vellum/releases/download/v0.2.0/vellum-0.2.0-linux-amd64.tar.gz"
-      sha256 "3e72ecbeed5ed373c45ce0c81f1320367bcf72ac8aa5279d223ff601bd92b7b2"
+      url "https://github.com/marcelocantos/vellum/releases/download/v0.3.0-rc.1/vellum-0.3.0-rc.1-linux-amd64.tar.gz"
+      sha256 "8ecdb54a13a2f778d9f7cd97ada5c17ac34aac5e3b8616351bde6a45d503c2c1"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/vellum/releases/download/v0.2.0/vellum-0.2.0-linux-arm64.tar.gz"
-      sha256 "508d62d4f0c093234f24f457aa491008e820202691bdcbede08b5ff58019b079"
+      url "https://github.com/marcelocantos/vellum/releases/download/v0.3.0-rc.1/vellum-0.3.0-rc.1-linux-arm64.tar.gz"
+      sha256 "5c44275bc18fb375840e98c4b6a7bb7470aa7a8acc75d72b39d85c60410104a1"
     end
   end
 
   def install
-    bin.install "vellum" => "vellum"
-  end
-
-  def caveats
-    <<~EOS
-      vellum requires Prince (HTML→PDF) which is not in Homebrew core.
-      Install via cask:
-        brew install --cask prince
-      or download from https://www.princexml.com/download/
-    EOS
-  end
-
-  service do
-    run [opt_bin/"vellum", "--mcp"]
-    keep_alive true
-    log_path var/"log/vellum.log"
-    error_log_path var/"log/vellum.log"
-    environment_variables PATH: [
-      "#{HOMEBREW_PREFIX}/bin",
-      "#{HOMEBREW_PREFIX}/sbin",
-      "/usr/local/bin",
-      "#{Dir.home}/.cargo/bin",
-      "#{Dir.home}/.local/bin",
-      "#{Dir.home}/.py/bin",
-      "#{Dir.home}/go/bin",
-      "/usr/bin",
-      "/bin",
-      "/usr/sbin",
-      "/sbin",
-    ].join(":")
+    bin.install "vellum" => "vellum-bin"
+    (bin/"vellum").write <<~SH
+      #!/bin/sh
+      # Prepend the canonical tool dirs so node, mmdc, and prince
+      # resolve regardless of how vellum is launched (terminal,
+      # MCP client with a stripped PATH inherited from launchd, …).
+      export PATH="#{HOMEBREW_PREFIX}/bin:#{HOMEBREW_PREFIX}/sbin:/usr/local/bin:$HOME/.cargo/bin:$HOME/.local/bin:$HOME/.py/bin:$HOME/go/bin:$PATH"
+      exec "#{opt_bin}/vellum-bin" "$@"
+    SH
+    (bin/"vellum").chmod 0755
   end
 
   test do
