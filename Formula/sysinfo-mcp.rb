@@ -5,15 +5,15 @@
 class SysinfoMcp < Formula
   desc "Lightweight c mcp server exposing macos system information to ai tools"
   homepage "https://github.com/marcelocantos/sysinfo-mcp"
-  url "https://github.com/marcelocantos/sysinfo-mcp/archive/refs/tags/v0.2.0.tar.gz"
-  version "0.2.0"
-  sha256 "e5e48edfd860a061f2398cf99b6af47eb4beae9cb6432359f426030c8282cda5"
+  url "https://github.com/marcelocantos/sysinfo-mcp/archive/refs/tags/v0.3.0.tar.gz"
+  version "0.3.0"
+  sha256 "78af6d47bed07c797f6c1417e5b7b3e37fb3c90985c16e3351333dad183090f9"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/sysinfo-mcp/releases/download/v0.2.0/sysinfo-mcp-0.2.0-darwin-arm64.tar.gz"
-      sha256 "179f38ff57a4c21eae59a121032a751238d6a52c38c144ff2bc09b5d88f4d4b1"
+      url "https://github.com/marcelocantos/sysinfo-mcp/releases/download/v0.3.0/sysinfo-mcp-0.3.0-darwin-arm64.tar.gz"
+      sha256 "aff93d95b68c978dc6bc12f023f6c7304cbb8dbfba98dcdc4ea9bbfe90a4a531"
     end
   end
 
