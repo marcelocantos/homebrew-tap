@@ -11,17 +11,38 @@ class Spyder < Formula
     environment_variables PATH: "/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
   end
 
+  def caveats
+    <<~EOS
+      spyder runs as a persistent HTTP MCP server on :3030.
+      It is NOT started automatically on install — start it with:
+
+        brew services start spyder
+
+      Then register it with your agent (Claude Code shown):
+
+        claude mcp add --scope user --transport http spyder http://localhost:3030/mcp
+
+      Verify:
+
+        brew services list | grep spyder    # should be "started"
+        lsof -iTCP:3030 -sTCP:LISTEN        # should show spyder
+
+      If MCP tools disappear mid-session, the daemon likely stopped
+      — restart with `brew services restart spyder`.
+    EOS
+  end
+
   desc "Mcp server for ios and android device orchestration"
   homepage "https://github.com/marcelocantos/spyder"
-  url "https://github.com/marcelocantos/spyder/archive/refs/tags/v0.30.0.tar.gz"
-  version "0.30.0"
-  sha256 "183c709c20506e9a2928decc80c679392d1ef6de071cc2efe8dba59f172faf33"
+  url "https://github.com/marcelocantos/spyder/archive/refs/tags/v0.31.0.tar.gz"
+  version "0.31.0"
+  sha256 "33ba86d42a3f29dc641831088fcd38db2d993c7f37190aedb4ea27a482cfa062"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/spyder/releases/download/v0.30.0/spyder-0.30.0-darwin-arm64.tar.gz"
-      sha256 "40e7c27b4c457eee2093842b39ef7984e88a0e607c6a12687908c06060536c51"
+      url "https://github.com/marcelocantos/spyder/releases/download/v0.31.0/spyder-0.31.0-darwin-arm64.tar.gz"
+      sha256 "03671f1835fc228f85b8e263ba3e3961083506d1f2190490a41711bbcdaafad5"
     end
   end
 
