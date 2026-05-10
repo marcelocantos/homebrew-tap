@@ -15,6 +15,7 @@ brew install marcelocantos/tap/<formula>
 | ----------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------- |
 | [bullseye](https://github.com/marcelocantos/bullseye)       | Mcp server for managing targets  desired states with dependency tracking and fr  | `brew install bullseye`    |
 | [canopy](https://github.com/marcelocantos/canopy)           | Mcp server for ast-level multi-language code transformations                     | `brew install canopy`      |
+| [crosshair](https://github.com/marcelocantos/crosshair)     | Convergence executor daemon  runs strategies declared on bullseye targets towar  | `brew install crosshair`   |
 | [doit](https://github.com/marcelocantos/doit)               | Agentic gatekeeper for claude code  three-level policy engine, starlark rules,   | `brew install doit`        |
 | [ged](https://github.com/marcelocantos/ge)                  | ge development daemon — dashboard and bridge for game servers and players        | `brew install ged`         |
 | [jevons](https://github.com/marcelocantos/jevons)           | Personal ai assistant  persistent claude code agents with voice-first web ui, t  | `brew install jevons`      |

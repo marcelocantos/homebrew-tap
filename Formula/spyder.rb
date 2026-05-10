@@ -29,25 +29,34 @@ class Spyder < Formula
 
       If MCP tools disappear mid-session, the daemon likely stopped
       — restart with `brew services restart spyder`.
+
+      spyder spawns a bundled `ios` binary (go-ios) as a child
+      process for iOS-17+ device discovery. No system LaunchDaemon
+      or sudo is required — the tunnel runs in user-space mode.
+
+      Upgrading from a pre-0.33 install? The old pmd3-tunneld
+      LaunchDaemon (if you installed it manually) can be removed:
+        sudo launchctl bootout system /Library/LaunchDaemons/com.marcelocantos.pmd3-tunneld.plist
+        sudo rm /Library/LaunchDaemons/com.marcelocantos.pmd3-tunneld.plist
     EOS
   end
 
   desc "Mcp server for ios and android device orchestration"
   homepage "https://github.com/marcelocantos/spyder"
-  url "https://github.com/marcelocantos/spyder/archive/refs/tags/v0.32.0.tar.gz"
-  version "0.32.0"
-  sha256 "2a741cdf60ef643c7e5b3d7d9cf5c1a17e8e405dbb99240af4672382a7979650"
+  url "https://github.com/marcelocantos/spyder/archive/refs/tags/v0.33.0.tar.gz"
+  version "0.33.0"
+  sha256 "45adf2ec81bdcc890407525180f8c373c7c8eb3fc26d697354090e976d1a1352"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/spyder/releases/download/v0.32.0/spyder-0.32.0-darwin-arm64.tar.gz"
-      sha256 "1e5c6c4201fbe346cc93aa7058dc0b392553bed22809494c546418e6a04e2a75"
+      url "https://github.com/marcelocantos/spyder/releases/download/v0.33.0/spyder-0.33.0-darwin-arm64.tar.gz"
+      sha256 "bafef1a6d9970ad4346b538411bfadf140a71b3d56ae970f530cbe97256f5eb5"
     end
   end
 
   def install
-    bin.install "bin/spyder" => "spyder"; libexec.install Dir["libexec/pmd3-bridge"]; libexec.install Dir["libexec/spyder-source"]
+    bin.install "bin/spyder" => "spyder"; (libexec/"spyder").install "libexec/spyder/ios"; libexec.install Dir["libexec/spyder-source"]
   end
 
   test do
