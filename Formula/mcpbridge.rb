@@ -10,29 +10,29 @@ class Mcpbridge < Formula
     error_log_path var/"log/mcpbridge-daemon.log"
   end
 
-  desc "Transparent wrapper for mcp servers  auto-upgrade without breaking agent sessio"
+  desc "Transparent wrapper for mcp servers  keeps agent sessions alive across server r"
   homepage "https://github.com/marcelocantos/mcpbridge"
-  url "https://github.com/marcelocantos/mcpbridge/archive/refs/tags/v0.7.0.tar.gz"
-  version "0.7.0"
-  sha256 "6fe89515aa8007661d7d7d4f10ad8bc80058c1cbefd4460af2b13986a6a172ab"
+  url "https://github.com/marcelocantos/mcpbridge/archive/refs/tags/v0.8.0.tar.gz"
+  version "0.8.0"
+  sha256 "530c7846787fd150380efed4d09561096a0ee6f5cd481ff6428f2d947d46ff26"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/mcpbridge/releases/download/v0.7.0/mcpbridge-0.7.0-darwin-arm64.tar.gz"
-      sha256 "4f51829db42aecc33aa9c2c4876310d4a42536d72bac70228a57b564fe86b73d"
+      url "https://github.com/marcelocantos/mcpbridge/releases/download/v0.8.0/mcpbridge-0.8.0-darwin-arm64.tar.gz"
+      sha256 "9311cbfd4022092fef717ad1c0490fd8c187e227f609070364fa1950ee7cda3b"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/mcpbridge/releases/download/v0.7.0/mcpbridge-0.7.0-linux-amd64.tar.gz"
-      sha256 "0e09972434b8558d5b9e442d4379d5b3841800ae65705e9e9e487b449de7f303"
+      url "https://github.com/marcelocantos/mcpbridge/releases/download/v0.8.0/mcpbridge-0.8.0-linux-amd64.tar.gz"
+      sha256 "a8128420243f31bb751e98a3918fa667f323708589590bd7ea15cf106c559fd3"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/mcpbridge/releases/download/v0.7.0/mcpbridge-0.7.0-linux-arm64.tar.gz"
-      sha256 "e5c57d2c047abbdbe5639860688475f5565574e68496e4d28e7059d32097b627"
+      url "https://github.com/marcelocantos/mcpbridge/releases/download/v0.8.0/mcpbridge-0.8.0-linux-arm64.tar.gz"
+      sha256 "8dd7b54013fb7cece439579e3534e7f1080e53c7d92f7349a61a9d7018a56102"
     end
   end
 
