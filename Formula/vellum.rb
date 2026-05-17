@@ -5,39 +5,47 @@
 class Vellum < Formula
   depends_on "mermaid-cli"
   depends_on "node"
+  depends_on "weasyprint"
 
   def caveats
     <<~EOS
-      vellum requires Prince (HTML→PDF) which is not in Homebrew core.
-      Install via cask:
-        brew install --cask prince
-      or download from https://www.princexml.com/download/
+      vellum is installed with WeasyPrint as the default renderer (BSD-3, open-source).
+
+      To opt into Prince (proprietary, slightly better typography), either:
+        - install it from https://www.princexml.com/download/ (free with watermark
+          for non-commercial use; commercial licence required otherwise), and
+        - set "backend: prince" in ~/.config/vellum/config.yaml, or pass
+          --backend prince on the CLI, or supply "backend": "prince" in an
+          MCP tool call.
+
+      KaTeX is needed for math rendering:
+        npm install -g katex
     EOS
   end
 
-  desc "Document preparation mcp server  markdown to pdf via goldmark + prince"
+  desc "Document preparation mcp server  markdown to pdf via goldmark + weasyprint (pri"
   homepage "https://github.com/marcelocantos/vellum"
-  url "https://github.com/marcelocantos/vellum/archive/refs/tags/v0.3.0.tar.gz"
-  version "0.3.0"
-  sha256 "8cbe70c6c95652d2a9c7fa6541fadd78a342b42942f01ec01c12586d2f2d191c"
+  url "https://github.com/marcelocantos/vellum/archive/refs/tags/v0.4.0.tar.gz"
+  version "0.4.0"
+  sha256 "1d237135887a8e81b907bf4e075a2fcbcac2b5adead5f40e0d87df411f553cc4"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/vellum/releases/download/v0.3.0/vellum-0.3.0-darwin-arm64.tar.gz"
-      sha256 "0568c80259734a8499a9a876fa1c9483b313877195cc2bd89286db44b0526605"
+      url "https://github.com/marcelocantos/vellum/releases/download/v0.4.0/vellum-0.4.0-darwin-arm64.tar.gz"
+      sha256 "b406b12681591e2a503868a2436e1d4267156af96afb3efaa8697faed1e7cbe6"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/vellum/releases/download/v0.3.0/vellum-0.3.0-linux-amd64.tar.gz"
-      sha256 "53b42f53880dbeb069fc6bd1efb48077655ad74fa598d988bb0f215dc896fad1"
+      url "https://github.com/marcelocantos/vellum/releases/download/v0.4.0/vellum-0.4.0-linux-amd64.tar.gz"
+      sha256 "5d72b160801fb6807aea8c60d76b9d469165b441ffc983b2fda2c1be0c6e0f9e"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/vellum/releases/download/v0.3.0/vellum-0.3.0-linux-arm64.tar.gz"
-      sha256 "d85316bb70743c9a6ccedcdef05bacd053b5c6e37a84e05d0ad5f2845e1b78ba"
+      url "https://github.com/marcelocantos/vellum/releases/download/v0.4.0/vellum-0.4.0-linux-arm64.tar.gz"
+      sha256 "7b2cd10d8ec952c9caf1b130d45657a144f8cedc37454a6c898bdc110045b4b8"
     end
   end
 
