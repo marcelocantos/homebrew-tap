@@ -33,25 +33,20 @@ class Spyder < Formula
       spyder spawns a bundled `ios` binary (go-ios) as a child
       process for iOS-17+ device discovery. No system LaunchDaemon
       or sudo is required — the tunnel runs in user-space mode.
-
-      Upgrading from a pre-0.33 install? The old pmd3-tunneld
-      LaunchDaemon (if you installed it manually) can be removed:
-        sudo launchctl bootout system /Library/LaunchDaemons/com.marcelocantos.pmd3-tunneld.plist
-        sudo rm /Library/LaunchDaemons/com.marcelocantos.pmd3-tunneld.plist
     EOS
   end
 
   desc "Mcp server for ios and android device orchestration"
   homepage "https://github.com/marcelocantos/spyder"
-  url "https://github.com/marcelocantos/spyder/archive/refs/tags/v0.34.0.tar.gz"
-  version "0.34.0"
-  sha256 "576ea848cc4a7de8ff835f53be16571303839f2679da291a2dd53030ffd220ff"
+  url "https://github.com/marcelocantos/spyder/archive/refs/tags/v0.35.0.tar.gz"
+  version "0.35.0"
+  sha256 "6a2881c24c065ce8f37dee32f8d06b6c1f2d659eea8cbe0cf8b1532ab7b0adaa"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/spyder/releases/download/v0.34.0/spyder-0.34.0-darwin-arm64.tar.gz"
-      sha256 "427ad912e460aa6ec5504023ed13e23f243696d809301910689307616dad7666"
+      url "https://github.com/marcelocantos/spyder/releases/download/v0.35.0/spyder-0.35.0-darwin-arm64.tar.gz"
+      sha256 "d4c8ac48e13a933b69f4b350adda6dc7e58da69a0aabea5a5702366182519d55"
     end
   end
 
