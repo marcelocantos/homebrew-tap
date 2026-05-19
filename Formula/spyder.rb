@@ -38,20 +38,20 @@ class Spyder < Formula
 
   desc "Mcp server for ios and android device orchestration"
   homepage "https://github.com/marcelocantos/spyder"
-  url "https://github.com/marcelocantos/spyder/archive/refs/tags/v0.39.0.tar.gz"
-  version "0.39.0"
-  sha256 "ed47f418829be2551676b7ca052c7cc39a278d56ca02ec5ecd1df3fa22e8de01"
+  url "https://github.com/marcelocantos/spyder/archive/refs/tags/v0.40.0.tar.gz"
+  version "0.40.0"
+  sha256 "88267525cc822001c989bb9a2a9c419a3b6b8b00b1338706dacb36ca7b71c3a6"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/spyder/releases/download/v0.39.0/spyder-0.39.0-darwin-arm64.tar.gz"
-      sha256 "687aa3b54a65acaa9ab14a8332071e7b3e308c7dfa06103538a37e064757962a"
+      url "https://github.com/marcelocantos/spyder/releases/download/v0.40.0/spyder-0.40.0-darwin-arm64.tar.gz"
+      sha256 "35e2c0a690c26a41ecd45cc4af3b6237b1c3bced95b5921a33ee44ff49284551"
     end
   end
 
   def install
-    bin.install "bin/spyder" => "spyder"; (libexec/"spyder").install "libexec/spyder/ios"; libexec.install Dir["libexec/spyder-source"]
+    bin.install "bin/spyder" => "spyder"; (libexec/"spyder").install "libexec/spyder/ios"
   end
 
   test do
