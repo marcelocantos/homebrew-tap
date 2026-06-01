@@ -16,11 +16,11 @@ brew install marcelocantos/tap/<formula>
 | [bullseye](https://github.com/marcelocantos/bullseye)       | Mcp server for managing targets  desired states with dependency tracking and fr  | `brew install bullseye`    |
 | [canopy](https://github.com/marcelocantos/canopy)           | Mcp server for ast-level multi-language code transformations                     | `brew install canopy`      |
 | [crosshair](https://github.com/marcelocantos/crosshair)     | Convergence executor daemon  runs strategies declared on bullseye targets towar  | `brew install crosshair`   |
+| [cv](https://github.com/marcelocantos/cv)                   | Build tool with make's dependency-graph model, minus 48 years of accumulated pai | `brew install cv`          |
 | [doit](https://github.com/marcelocantos/doit)               | Agentic gatekeeper for claude code  three-level policy engine, starlark rules,   | `brew install doit`        |
 | [ged](https://github.com/marcelocantos/ge)                  | ge development daemon — dashboard and bridge for game servers and players        | `brew install ged`         |
 | [jevons](https://github.com/marcelocantos/jevons)           | Personal ai assistant  persistent claude code agents with voice-first web ui, t  | `brew install jevons`      |
 | [mcpbridge](https://github.com/marcelocantos/mcpbridge)     | Transparent wrapper for mcp servers  keeps agent sessions alive across server r  | `brew install mcpbridge`   |
-| [mk](https://github.com/marcelocantos/mk)                   | Build tool with make's dependency-graph model, minus 48 years of accumulated pai | `brew install mk`          |
 | [mnemo](https://github.com/marcelocantos/mnemo)             | Claude code transcript memory  mcp server for searching past sessions            | `brew install mnemo`       |
 | [pageflip](https://github.com/marcelocantos/pageflip)       | Capture slides from a screen region whenever they change                         | `brew install pageflip`    |
 | [pigeon](https://github.com/marcelocantos/pigeon)           | Webtransport relay library (go + swift + kotlin + c + typescript) with e2e encry | `brew install pigeon`      |
