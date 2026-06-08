@@ -5,6 +5,7 @@
 class Vellum < Formula
   depends_on "mermaid-cli"
   depends_on "node"
+  depends_on "pandoc"
   depends_on "weasyprint"
 
   def caveats
@@ -20,32 +21,36 @@ class Vellum < Formula
 
       KaTeX is needed for math rendering:
         npm install -g katex
+
+      Pandoc handles the inverse direction (rich-text → Markdown via
+      `vellum import` and the `convert_from_clipboard` MCP tool); it is
+      included as a dependency.
     EOS
   end
 
   desc "Document preparation mcp server  markdown to pdf via goldmark + weasyprint (pri"
   homepage "https://github.com/marcelocantos/vellum"
-  url "https://github.com/marcelocantos/vellum/archive/refs/tags/v0.4.0.tar.gz"
-  version "0.4.0"
-  sha256 "1d237135887a8e81b907bf4e075a2fcbcac2b5adead5f40e0d87df411f553cc4"
+  url "https://github.com/marcelocantos/vellum/archive/refs/tags/v0.5.0.tar.gz"
+  version "0.5.0"
+  sha256 "0b3986c86ad52fcb86c38052424c2ba9e0134cc5a360c73e169eba63f89c99d9"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/vellum/releases/download/v0.4.0/vellum-0.4.0-darwin-arm64.tar.gz"
-      sha256 "b406b12681591e2a503868a2436e1d4267156af96afb3efaa8697faed1e7cbe6"
+      url "https://github.com/marcelocantos/vellum/releases/download/v0.5.0/vellum-0.5.0-darwin-arm64.tar.gz"
+      sha256 "685bc5829cfc2b53c98c07b660601148e1fafe8250a3329a5e03d57c5b0978ee"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/vellum/releases/download/v0.4.0/vellum-0.4.0-linux-amd64.tar.gz"
-      sha256 "5d72b160801fb6807aea8c60d76b9d469165b441ffc983b2fda2c1be0c6e0f9e"
+      url "https://github.com/marcelocantos/vellum/releases/download/v0.5.0/vellum-0.5.0-linux-amd64.tar.gz"
+      sha256 "18246954b96eea233ae25bed14d54877c1ae5806097c5688f49cf9d109837a59"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/vellum/releases/download/v0.4.0/vellum-0.4.0-linux-arm64.tar.gz"
-      sha256 "7b2cd10d8ec952c9caf1b130d45657a144f8cedc37454a6c898bdc110045b4b8"
+      url "https://github.com/marcelocantos/vellum/releases/download/v0.5.0/vellum-0.5.0-linux-arm64.tar.gz"
+      sha256 "68b2b972e1565c84da6957882eac0c53c7462b9b136a894af3523f992e651764"
     end
   end
 
