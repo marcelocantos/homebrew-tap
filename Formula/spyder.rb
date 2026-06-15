@@ -38,15 +38,15 @@ class Spyder < Formula
 
   desc "Mcp server for ios and android device orchestration"
   homepage "https://github.com/marcelocantos/spyder"
-  url "https://github.com/marcelocantos/spyder/archive/refs/tags/v0.57.0.tar.gz"
-  version "0.57.0"
-  sha256 "49cb9a6c69340cbbca94d39fc97f7aaf7cb3897b478548cea1608f43f7c4f9d8"
+  url "https://github.com/marcelocantos/spyder/archive/refs/tags/v0.58.0.tar.gz"
+  version "0.58.0"
+  sha256 "04c47ef11bb2f97f70d2a6249a12e42400a7fe1f2d2af3613366531eb67a9125"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/spyder/releases/download/v0.57.0/spyder-0.57.0-darwin-arm64.tar.gz"
-      sha256 "d7c79121f3fc07bf066f4dab868dde4039f8ab141efcda3d1a69b94d3756ddb6"
+      url "https://github.com/marcelocantos/spyder/releases/download/v0.58.0/spyder-0.58.0-darwin-arm64.tar.gz"
+      sha256 "94223911c7814b0959599302888f35f2dd368ab741db282357b894fcd2c730ef"
     end
   end
 
