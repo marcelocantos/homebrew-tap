@@ -5,27 +5,27 @@
 class Sqldeep < Formula
   desc "C++20 transpiler for json5-like sql syntax to standard sql with database-specifi"
   homepage "https://github.com/marcelocantos/sqldeep"
-  url "https://github.com/marcelocantos/sqldeep/archive/refs/tags/v0.22.0.tar.gz"
-  version "0.22.0"
-  sha256 "04a9d45b75cabf6e8ffc6cf67d024115a493c1fba97f4179455a472e7af7bbcd"
+  url "https://github.com/marcelocantos/sqldeep/archive/refs/tags/v0.23.0.tar.gz"
+  version "0.23.0"
+  sha256 "e51e34493885ad67c54037bff12f635fbd6ce3847107da446a92d11653696c75"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/sqldeep/releases/download/v0.22.0/sqldeep-0.22.0-darwin-arm64.tar.gz"
-      sha256 "61a10febaeb9de527a32fcc3e5bc7ca264305af889a1f9478d6b0025622c9749"
+      url "https://github.com/marcelocantos/sqldeep/releases/download/v0.23.0/sqldeep-0.23.0-darwin-arm64.tar.gz"
+      sha256 "5a34748491480199b7a296715f57c8b6074d8708bc8793ea64d1eb054c86ce98"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/sqldeep/releases/download/v0.22.0/sqldeep-0.22.0-linux-amd64.tar.gz"
-      sha256 "2aba5e07508fe9f5b7f76d0ea42cfe022cb6bf3819c5ed8ade8526144edc46d2"
+      url "https://github.com/marcelocantos/sqldeep/releases/download/v0.23.0/sqldeep-0.23.0-linux-amd64.tar.gz"
+      sha256 "7f2529b50be4164663cbfb268423b1e9781d473080b036eb5fe7cc38f567aa41"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/sqldeep/releases/download/v0.22.0/sqldeep-0.22.0-linux-arm64.tar.gz"
-      sha256 "d37e7978de8052dd499de068c43d2b244158ea41a61416a0c03930cfd20352d7"
+      url "https://github.com/marcelocantos/sqldeep/releases/download/v0.23.0/sqldeep-0.23.0-linux-arm64.tar.gz"
+      sha256 "4a84980152d15a27c9c6ddbf190b07d5b355bd340aa0bb3249ed6b87f1ace95c"
     end
   end
 
