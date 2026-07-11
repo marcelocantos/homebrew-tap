@@ -18,7 +18,7 @@ class Jevons < Formula
   sha256 "1403da24744255069082f50c9823e47b6bf7db60e6f860be03bb2384ca35a77a"
   license "Apache-2.0"
 
-  depends_on gh
+  depends_on "gh"
 
   on_macos do
     on_arm do
