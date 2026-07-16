@@ -5,27 +5,27 @@
 class Pigeon < Formula
   desc "Webtransport relay library (go + swift + kotlin + c + typescript) with e2e encry"
   homepage "https://github.com/marcelocantos/pigeon"
-  url "https://github.com/marcelocantos/pigeon/archive/refs/tags/v0.31.0.tar.gz"
-  version "0.31.0"
-  sha256 "b40901b88db4dcd33ef7ead1129292d7968d9a7f57006c18deadb9b135027ce8"
+  url "https://github.com/marcelocantos/pigeon/archive/refs/tags/v0.32.0.tar.gz"
+  version "0.32.0"
+  sha256 "63ac04516a80bb3174b96bf4e9245c9ff2c320451aaa8ff506c53114a9fb7675"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/pigeon/releases/download/v0.31.0/pigeon-0.31.0-darwin-arm64.tar.gz"
-      sha256 "1906fe84a0e3a04986dac5efa7e23aee2d77663091788db1e6edb71be1de0a35"
+      url "https://github.com/marcelocantos/pigeon/releases/download/v0.32.0/pigeon-0.32.0-darwin-arm64.tar.gz"
+      sha256 "ab223622fb2c551d591dd201a7e46ac8438522ceabffc49d89a60778e875ab66"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/pigeon/releases/download/v0.31.0/pigeon-0.31.0-linux-amd64.tar.gz"
-      sha256 "f1ae7652220d0a63b38cb357fed50e6ad4cb3d29d4940a824db1485dc2249999"
+      url "https://github.com/marcelocantos/pigeon/releases/download/v0.32.0/pigeon-0.32.0-linux-amd64.tar.gz"
+      sha256 "3c702bc036dc7aa3c3df407824f04703c9d18055a1a20da2e88d23c8aadf0911"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/pigeon/releases/download/v0.31.0/pigeon-0.31.0-linux-arm64.tar.gz"
-      sha256 "eafa1f7e5c975965baf06b36f2de33d79566caee2e66aae1df6a6cae15a2eefb"
+      url "https://github.com/marcelocantos/pigeon/releases/download/v0.32.0/pigeon-0.32.0-linux-arm64.tar.gz"
+      sha256 "52b3e8c29672f519db3d35395742af9785452a83acb79af6677c41228ec7c151"
     end
   end
 
