@@ -13,29 +13,29 @@ class Jevons < Formula
 
   desc "Personal ai assistant  persistent claude code agents with voice-first web ui, t"
   homepage "https://github.com/marcelocantos/jevons"
-  url "https://github.com/marcelocantos/jevons/archive/refs/tags/v0.6.0.tar.gz"
-  version "0.6.0"
-  sha256 "db074b5ee2ab4d08902c6d183e878b151d25454c25114e304505468044852216"
+  url "https://github.com/marcelocantos/jevons/archive/refs/tags/v0.7.0.tar.gz"
+  version "0.7.0"
+  sha256 "9cc0ab4965179ff451d800c57761d855627f320cfc7a9b52f27dbbf12a52bc1c"
   license "Apache-2.0"
 
   depends_on "gh"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/jevons/releases/download/v0.6.0/jevons-0.6.0-darwin-arm64.tar.gz"
-      sha256 "cd5c6d52f2583e05d122ad51468bb40de6567555c43b68d6389868d7930c62b7"
+      url "https://github.com/marcelocantos/jevons/releases/download/v0.7.0/jevons-0.7.0-darwin-arm64.tar.gz"
+      sha256 "e78018a48ba874aaa6bc7e8bfb75f7c5508afd38d1113e3f1e8b9c972c086c17"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/jevons/releases/download/v0.6.0/jevons-0.6.0-linux-amd64.tar.gz"
-      sha256 "569830d2601ff44ccd7bedafa87160059bb966056606cfaf1d2d57c074fdf8de"
+      url "https://github.com/marcelocantos/jevons/releases/download/v0.7.0/jevons-0.7.0-linux-amd64.tar.gz"
+      sha256 "b32ba4e655adb4ecb3f14b0f81640ffa1f7b0af2259dd94c230dfee322cd1c93"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/jevons/releases/download/v0.6.0/jevons-0.6.0-linux-arm64.tar.gz"
-      sha256 "fb7347be8060325fb3730d044b4b229b6d1422ed599a5db36b2ac62cd69a7ba9"
+      url "https://github.com/marcelocantos/jevons/releases/download/v0.7.0/jevons-0.7.0-linux-arm64.tar.gz"
+      sha256 "3a8c0c3952707ab01c50adb0aaff7883addaf3f11ac38496ed538630e828dcb6"
     end
   end
 
