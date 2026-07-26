@@ -13,6 +13,7 @@ brew install marcelocantos/tap/<formula>
 <!-- project_table_start -->
 | Project                                                     | Description                                                                      | Install                    |
 | ----------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------- |
+| [blurter](https://github.com/marcelocantos/blurter)         | Local notification daemon: apps spool events, blurter owns the credentials, poli | `brew install blurter`     |
 | [bullseye](https://github.com/marcelocantos/bullseye)       | Mcp server for managing targets  desired states with dependency tracking and fr  | `brew install bullseye`    |
 | [canopy](https://github.com/marcelocantos/canopy)           | Mcp server for ast-level multi-language code transformations                     | `brew install canopy`      |
 | [crosshair](https://github.com/marcelocantos/crosshair)     | Convergence executor daemon  runs strategies declared on bullseye targets towar  | `brew install crosshair`   |
