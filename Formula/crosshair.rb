@@ -5,27 +5,27 @@
 class Crosshair < Formula
   desc "Convergence executor daemon  runs strategies declared on bullseye targets towar"
   homepage "https://github.com/marcelocantos/crosshair"
-  url "https://github.com/marcelocantos/crosshair/archive/refs/tags/v0.1.0.tar.gz"
-  version "0.1.0"
-  sha256 "47b1d3c47d6b6b1198b2d129061d565cbc95047f27ff0101d4be0c333d50d594"
+  url "https://github.com/marcelocantos/crosshair/archive/refs/tags/v0.2.0.tar.gz"
+  version "0.2.0"
+  sha256 "df26b79e15cefccee120eb77907b6ae9848af836cd6e8a99b5f85d8d68f6e6c8"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/crosshair/releases/download/v0.1.0/crosshair-0.1.0-darwin-arm64.tar.gz"
-      sha256 "b3758fb6c416baea4bb79d8f44671936512861cb1dbb648fe076dd8554d3bcf8"
+      url "https://github.com/marcelocantos/crosshair/releases/download/v0.2.0/crosshair-0.2.0-darwin-arm64.tar.gz"
+      sha256 "4b921456b04bca9f1ce5cc56721f2e2ad6d895eab51a3b35fd984f505a4f80c5"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/crosshair/releases/download/v0.1.0/crosshair-0.1.0-linux-amd64.tar.gz"
-      sha256 "2e8b2dc9e8422109132ab08806f1dc125d6ac7fc11b7294fc1104528c014d73c"
+      url "https://github.com/marcelocantos/crosshair/releases/download/v0.2.0/crosshair-0.2.0-linux-amd64.tar.gz"
+      sha256 "fccfe025c5915d59893767829539839c0ace21b7dfb129672a52ef65a16eadd4"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/crosshair/releases/download/v0.1.0/crosshair-0.1.0-linux-arm64.tar.gz"
-      sha256 "47cc0fc6f25f81aad1684f82cde10cacacf960f0a2df1168a887e5d7d01c2559"
+      url "https://github.com/marcelocantos/crosshair/releases/download/v0.2.0/crosshair-0.2.0-linux-arm64.tar.gz"
+      sha256 "ed3be1197fa4cc77b02924f8bd549f3cc5a48b23f5f03b13f2aecbdb6bb816ca"
     end
   end
 
