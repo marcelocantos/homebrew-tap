@@ -31,6 +31,6 @@ brew install marcelocantos/tap/<formula>
 | [sqldeep](https://github.com/marcelocantos/sqldeep)         | C++20 transpiler for json5-like sql syntax to standard sql with database-specifi | `brew install sqldeep`     |
 | [sysinfo-mcp](https://github.com/marcelocantos/sysinfo-mcp) | Lightweight c mcp server exposing macos system information to ai tools           | `brew install sysinfo-mcp` |
 | [tern](https://github.com/marcelocantos/tern)               | Webtransport relay library (go + swift + kotlin + typescript) with e2e encryptio | `brew install tern`        |
-| [vellum](https://github.com/marcelocantos/vellum)           | Document preparation mcp server  markdown to pdf via goldmark + weasyprint (pri  | `brew install vellum`      |
+| [vellum](https://github.com/marcelocantos/vellum)           | Document preparation mcp server  media-orthogonal markdown/pdf/rich-text conver  | `brew install vellum`      |
 | [ytt](https://github.com/marcelocantos/ytt)                 | Fetch youtube video transcripts from the command line                            | `brew install ytt`         |
 <!-- project_table_end -->
