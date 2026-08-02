@@ -20,7 +20,7 @@ brew install marcelocantos/tap/<formula>
 | [cv](https://github.com/marcelocantos/cv)                   | Build tool with make's dependency-graph model, minus 48 years of accumulated pai | `brew install cv`          |
 | [doit](https://github.com/marcelocantos/doit)               | Agentic gatekeeper for claude code  three-level policy engine, starlark rules,   | `brew install doit`        |
 | [ged](https://github.com/marcelocantos/ge)                  | ge development daemon — dashboard and bridge for game servers and players        | `brew install ged`         |
-| [jevons](https://github.com/marcelocantos/jevons)           | Personal ai assistant  persistent claude code agents with voice-first web ui, t  | `brew install jevons`      |
+| [jevons](https://github.com/marcelocantos/jevons)           | Personal ai assistant  grok acp overseer, fleet of coding agents, voice-first w  | `brew install jevons`      |
 | [mcpbridge](https://github.com/marcelocantos/mcpbridge)     | Transparent wrapper for mcp servers  keeps agent sessions alive across server r  | `brew install mcpbridge`   |
 | [mnemo](https://github.com/marcelocantos/mnemo)             | Claude code transcript memory  mcp server for searching past sessions            | `brew install mnemo`       |
 | [pageflip](https://github.com/marcelocantos/pageflip)       | Capture slides from a screen region whenever they change                         | `brew install pageflip`    |
