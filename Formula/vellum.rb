@@ -23,34 +23,34 @@ class Vellum < Formula
         npm install -g katex
 
       Pandoc handles the inverse direction (rich-text → Markdown via
-      `vellum import` and the `convert_from_clipboard` MCP tool); it is
-      included as a dependency.
+      `vellum import` / MCP convert from clipboard or rich-text files);
+      it is included as a dependency.
     EOS
   end
 
   desc "Document preparation mcp server  media-orthogonal markdown/pdf/rich-text conver"
   homepage "https://github.com/marcelocantos/vellum"
-  url "https://github.com/marcelocantos/vellum/archive/refs/tags/v0.8.0.tar.gz"
-  version "0.8.0"
-  sha256 "c89708b8b1cb9ce0ec820f773948d24e90072f8ee0d655c86e5f6ecdc55b15a9"
+  url "https://github.com/marcelocantos/vellum/archive/refs/tags/v0.9.0.tar.gz"
+  version "0.9.0"
+  sha256 "22c62e622b4bf05a19ab13095e9897b99d9295414e39ecdfb06c8c9824ca781a"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/vellum/releases/download/v0.8.0/vellum-0.8.0-darwin-arm64.tar.gz"
-      sha256 "55be68a17b9b40fa244e41b2ac429335a22ee5b80e68fdae27566da3521f4cfa"
+      url "https://github.com/marcelocantos/vellum/releases/download/v0.9.0/vellum-0.9.0-darwin-arm64.tar.gz"
+      sha256 "57be6e3222cd66fc391d7e7f018ff5bed5a63778402dede300647f7770aeeb93"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/vellum/releases/download/v0.8.0/vellum-0.8.0-linux-amd64.tar.gz"
-      sha256 "1ec62491e812e45f7baaf0f9befefd6a7693ac2903ade9601d9bcdf261045296"
+      url "https://github.com/marcelocantos/vellum/releases/download/v0.9.0/vellum-0.9.0-linux-amd64.tar.gz"
+      sha256 "55038c83e5077e2c478948930ec962c9123c81e35193a417fcfe17397d2ea284"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/vellum/releases/download/v0.8.0/vellum-0.8.0-linux-arm64.tar.gz"
-      sha256 "5cd1bad0ea6d1403b7e148a4736b3d1ec676dd8a8561b8e2eb4e13f9a0768184"
+      url "https://github.com/marcelocantos/vellum/releases/download/v0.9.0/vellum-0.9.0-linux-arm64.tar.gz"
+      sha256 "1908cadcfcc63f851ed94fd57eaa926bc003c48b684ebe8ddf7e1800ce91b580"
     end
   end
 
