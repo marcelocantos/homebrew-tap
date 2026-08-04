@@ -6,6 +6,7 @@ class Vellum < Formula
   depends_on "mermaid-cli"
   depends_on "node"
   depends_on "pandoc"
+  depends_on "poppler"
   depends_on "weasyprint"
 
   def caveats
@@ -22,35 +23,35 @@ class Vellum < Formula
       KaTeX is needed for math rendering:
         npm install -g katex
 
-      Pandoc handles the inverse direction (rich-text → Markdown via
-      `vellum import` / MCP convert from clipboard or rich-text files);
-      it is included as a dependency.
+      Pandoc handles rich-text import (RTF, DOCX, HTML, … → Markdown
+      with media extraction). Poppler (pdftoppm/pdftotext) handles PDF
+      import (page images + text). Both are formula dependencies.
     EOS
   end
 
   desc "Document preparation mcp server  media-orthogonal markdown/pdf/rich-text conver"
   homepage "https://github.com/marcelocantos/vellum"
-  url "https://github.com/marcelocantos/vellum/archive/refs/tags/v0.9.0.tar.gz"
-  version "0.9.0"
-  sha256 "22c62e622b4bf05a19ab13095e9897b99d9295414e39ecdfb06c8c9824ca781a"
+  url "https://github.com/marcelocantos/vellum/archive/refs/tags/v0.10.0.tar.gz"
+  version "0.10.0"
+  sha256 "cbb0d35dadf7be83b5ad463dedd77915bef81e266bc709de48a60fc1e82a30b4"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/vellum/releases/download/v0.9.0/vellum-0.9.0-darwin-arm64.tar.gz"
-      sha256 "57be6e3222cd66fc391d7e7f018ff5bed5a63778402dede300647f7770aeeb93"
+      url "https://github.com/marcelocantos/vellum/releases/download/v0.10.0/vellum-0.10.0-darwin-arm64.tar.gz"
+      sha256 "549b5e620a12bc3491250df8f04f1451a1d8bf063522c95594aca9be152dd170"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/vellum/releases/download/v0.9.0/vellum-0.9.0-linux-amd64.tar.gz"
-      sha256 "55038c83e5077e2c478948930ec962c9123c81e35193a417fcfe17397d2ea284"
+      url "https://github.com/marcelocantos/vellum/releases/download/v0.10.0/vellum-0.10.0-linux-amd64.tar.gz"
+      sha256 "4d64a119ccfdcdd6fc1f5fef285011a23b34301117c4c9d059d65e90d91ebf4e"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/vellum/releases/download/v0.9.0/vellum-0.9.0-linux-arm64.tar.gz"
-      sha256 "1908cadcfcc63f851ed94fd57eaa926bc003c48b684ebe8ddf7e1800ce91b580"
+      url "https://github.com/marcelocantos/vellum/releases/download/v0.10.0/vellum-0.10.0-linux-arm64.tar.gz"
+      sha256 "bf771e7066f97b64df8cbeb81fcd116a7a362ef94bce85fcd02198f4e9fe5c46"
     end
   end
 
