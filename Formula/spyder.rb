@@ -8,7 +8,7 @@ class Spyder < Formula
     keep_alive true
     log_path var/"log/spyder.log"
     error_log_path var/"log/spyder.log"
-    environment_variables PATH: "/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    environment_variables PATH: "/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin", SPYDER_ADDR: ":3030"
   end
 
   def caveats
@@ -38,15 +38,15 @@ class Spyder < Formula
 
   desc "Http mcp server for cross-platform mobile device orchestration and agent-friendl"
   homepage "https://github.com/marcelocantos/spyder"
-  url "https://github.com/marcelocantos/spyder/archive/refs/tags/v0.77.0.tar.gz"
-  version "0.77.0"
-  sha256 "8fdb842fab6e7c8412d913cde69a0a4e738d5deaa02fcdd5b407f21f6827482a"
+  url "https://github.com/marcelocantos/spyder/archive/refs/tags/v0.78.0.tar.gz"
+  version "0.78.0"
+  sha256 "c238ebff7d47adef1e5f1434a16640162971741b195d6e8fb40cb33ae789901e"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/spyder/releases/download/v0.77.0/spyder-0.77.0-darwin-arm64.tar.gz"
-      sha256 "fa5a0ebfcfb21d773a6b41eff6e1c9a0294c05a81e3284fb8514adaeda77078a"
+      url "https://github.com/marcelocantos/spyder/releases/download/v0.78.0/spyder-0.78.0-darwin-arm64.tar.gz"
+      sha256 "28fc9719d2f268654d68f643e7517cf0c92b4353dfa026af7de1cc14efa42d79"
     end
   end
 
