@@ -39,19 +39,19 @@ class Vellum < Formula
   on_macos do
     on_arm do
       url "https://github.com/marcelocantos/vellum/releases/download/v0.12.0/vellum-0.12.0-darwin-arm64.tar.gz"
-      sha256 "e8f9ef549c8c08de045347f9d5eb16471234e77d50027ba87dcc1d7a9a029782"
+      sha256 "c4ac13a9aa845978d39c6687692d8618159d36f2b09ba9e7a166818d924b709d"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/marcelocantos/vellum/releases/download/v0.12.0/vellum-0.12.0-linux-amd64.tar.gz"
-      sha256 "407c629aaa4b141fb4caf2ac12ea4670fe009540d9e53bbf570a43c3ec8aa3ee"
+      sha256 "39a9001984f69ecec9c0fa9e3129a21b608e13a3ee75eb9452d9088bc1ba939f"
     end
 
     on_arm do
       url "https://github.com/marcelocantos/vellum/releases/download/v0.12.0/vellum-0.12.0-linux-arm64.tar.gz"
-      sha256 "af4cba59c5a0eaefe7279266d82e435b4d5f5fc11e7d4b5915cbc7c5af165284"
+      sha256 "e7161b04eadf3e086769716c5190d007d25cf1c27c14c0c5f4a1e62591f9114d"
     end
   end
 
