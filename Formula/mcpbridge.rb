@@ -12,27 +12,27 @@ class Mcpbridge < Formula
 
   desc "Transparent wrapper for mcp servers  keeps agent sessions alive across server r"
   homepage "https://github.com/marcelocantos/mcpbridge"
-  url "https://github.com/marcelocantos/mcpbridge/archive/refs/tags/v0.8.0.tar.gz"
-  version "0.8.0"
-  sha256 "530c7846787fd150380efed4d09561096a0ee6f5cd481ff6428f2d947d46ff26"
+  url "https://github.com/marcelocantos/mcpbridge/archive/refs/tags/v0.9.0.tar.gz"
+  version "0.9.0"
+  sha256 "f7077cfd25cd9b3f29fee09f7d01a2d9850b67178a5c23bb2b99dcaa058258dc"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/mcpbridge/releases/download/v0.8.0/mcpbridge-0.8.0-darwin-arm64.tar.gz"
-      sha256 "9311cbfd4022092fef717ad1c0490fd8c187e227f609070364fa1950ee7cda3b"
+      url "https://github.com/marcelocantos/mcpbridge/releases/download/v0.9.0/mcpbridge-0.9.0-darwin-arm64.tar.gz"
+      sha256 "c43bda633e3d5410c754d2dce3b3e7dc558b78b557f2589f87441eac0f971817"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/mcpbridge/releases/download/v0.8.0/mcpbridge-0.8.0-linux-amd64.tar.gz"
-      sha256 "a8128420243f31bb751e98a3918fa667f323708589590bd7ea15cf106c559fd3"
+      url "https://github.com/marcelocantos/mcpbridge/releases/download/v0.9.0/mcpbridge-0.9.0-linux-amd64.tar.gz"
+      sha256 "6ec66b193f90a322defee9a7a16b0ea53ba6c73eea890dbf443420e88d85b0dd"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/mcpbridge/releases/download/v0.8.0/mcpbridge-0.8.0-linux-arm64.tar.gz"
-      sha256 "8dd7b54013fb7cece439579e3534e7f1080e53c7d92f7349a61a9d7018a56102"
+      url "https://github.com/marcelocantos/mcpbridge/releases/download/v0.9.0/mcpbridge-0.9.0-linux-arm64.tar.gz"
+      sha256 "5abe469f04b00aeafbfc35c917ba9150d44a205942eca2234e163d37a33587d8"
     end
   end
 
