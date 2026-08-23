@@ -38,15 +38,15 @@ class Spyder < Formula
 
   desc "Http mcp server for cross-platform mobile device orchestration and agent-friendl"
   homepage "https://github.com/marcelocantos/spyder"
-  url "https://github.com/marcelocantos/spyder/archive/refs/tags/v0.80.0.tar.gz"
-  version "0.80.0"
-  sha256 "d90c178baeb81e29d1d13c1bdf7173728d6dec6aed997cc297e46eb1875f025a"
+  url "https://github.com/marcelocantos/spyder/archive/refs/tags/v0.81.0.tar.gz"
+  version "0.81.0"
+  sha256 "612957384228226781e3eeef73043ccb8d633db1b3f5d3a2106a1a7f144d26f0"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/spyder/releases/download/v0.80.0/spyder-0.80.0-darwin-arm64.tar.gz"
-      sha256 "cd2875102471de92ee18c15f653badcb3d63b92d5cd3a82b16e1fb8b86e8a0f1"
+      url "https://github.com/marcelocantos/spyder/releases/download/v0.81.0/spyder-0.81.0-darwin-arm64.tar.gz"
+      sha256 "5a359b34a5de0aa7533c1ff5f60c120914332f4052392ebb80fa66fdf190cf6a"
     end
   end
 
