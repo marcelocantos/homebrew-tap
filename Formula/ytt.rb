@@ -5,9 +5,9 @@
 class Ytt < Formula
   desc "Fetch youtube video transcripts from the command line"
   homepage "https://github.com/marcelocantos/ytt"
-  url "https://github.com/marcelocantos/ytt/archive/refs/tags/v0.12.0.tar.gz"
-  version "0.12.0"
-  sha256 "0192715dd40e699039aed498ab2807c002c1f24f146f9835d8181bb62b4273a4"
+  url "https://github.com/marcelocantos/ytt/archive/refs/tags/v0.13.0.tar.gz"
+  version "0.13.0"
+  sha256 "0639b3f56e5726d6d680bd0e36edb63350c6bbb37ab1fc987a76f92424ca443c"
   license "Apache-2.0"
 
   depends_on "coreutils"
@@ -18,20 +18,20 @@ class Ytt < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/ytt/releases/download/v0.12.0/ytt-0.12.0-darwin-arm64.tar.gz"
-      sha256 "fe86d3987cde6b81770ccbee520e5e8382aa98470a7170e871bc1fabd005aec6"
+      url "https://github.com/marcelocantos/ytt/releases/download/v0.13.0/ytt-0.13.0-darwin-arm64.tar.gz"
+      sha256 "ddf9fc72fafd29a470f36b82d9edc3340191493f08a95080d35c119800544dc0"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/ytt/releases/download/v0.12.0/ytt-0.12.0-linux-amd64.tar.gz"
-      sha256 "8e6a0da560948056fe70768db8c5786b2b8820675820399606684eb067db3612"
+      url "https://github.com/marcelocantos/ytt/releases/download/v0.13.0/ytt-0.13.0-linux-amd64.tar.gz"
+      sha256 "0bc0ca27d9792539262ba9eca4f8fb75a258b6d771fcc44538e2080e46a18326"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/ytt/releases/download/v0.12.0/ytt-0.12.0-linux-arm64.tar.gz"
-      sha256 "e89bb9220c6d892398d90763e900751b1e70df90a1561df93ccf4916320f4181"
+      url "https://github.com/marcelocantos/ytt/releases/download/v0.13.0/ytt-0.13.0-linux-arm64.tar.gz"
+      sha256 "e04caa1f18faccf8e3972f537461e9e2f23406811f51bdcc7ae389b2262c6bd2"
     end
   end
 
