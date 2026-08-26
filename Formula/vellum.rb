@@ -48,27 +48,27 @@ class Vellum < Formula
 
   desc "Document preparation mcp server  media-orthogonal markdown/pdf/rich-text conver"
   homepage "https://github.com/marcelocantos/vellum"
-  url "https://github.com/marcelocantos/vellum/archive/refs/tags/v0.15.0.tar.gz"
-  version "0.15.0"
-  sha256 "100950819880bebc0381abf110330e73849b6affcd0bb363ff06961b62c1608b"
+  url "https://github.com/marcelocantos/vellum/archive/refs/tags/v0.16.0.tar.gz"
+  version "0.16.0"
+  sha256 "71aca0f7758186c280bdcc0bbde4b030160d4c0a1459a5bf2f8508c4954c828c"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/vellum/releases/download/v0.15.0/vellum-0.15.0-darwin-arm64.tar.gz"
-      sha256 "71df2c9bb7ce09405a51460db8e1f846398460b4b5fa16beacda92cbc5cdd365"
+      url "https://github.com/marcelocantos/vellum/releases/download/v0.16.0/vellum-0.16.0-darwin-arm64.tar.gz"
+      sha256 "53e13c1c3885174d571bb03b72d0d9bb77270a27b976dc06e5f792416ef9ffa4"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/vellum/releases/download/v0.15.0/vellum-0.15.0-linux-amd64.tar.gz"
-      sha256 "de422156f68d1616de5dda122bddfde0f1ee525794999d3e932a7a726b18333b"
+      url "https://github.com/marcelocantos/vellum/releases/download/v0.16.0/vellum-0.16.0-linux-amd64.tar.gz"
+      sha256 "e5bf1a3453cd6ca6a5ce6e3f2aaa49dc455a51c81b340389073c9ed4b4e0cf74"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/vellum/releases/download/v0.15.0/vellum-0.15.0-linux-arm64.tar.gz"
-      sha256 "aa21932b3b96f182ebb621f965b2582fed6c89f5f48f3ee058e191a1532e1b05"
+      url "https://github.com/marcelocantos/vellum/releases/download/v0.16.0/vellum-0.16.0-linux-arm64.tar.gz"
+      sha256 "79283d9dce6bfbf08063fbd7fbb6766bfec15657441a14c5bf31d120b24a9079"
     end
   end
 
