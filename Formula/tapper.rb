@@ -11,37 +11,41 @@ class Tapper < Formula
       tapper push runs homebrew-releaser in Docker — start Docker Desktop
       (or your container runtime) before pushing.
 
-      First-time token setup:
-        tapper token import-gh
-        tapper token verify
+  First-time token setup:
+    tapper token import-gh
+    tapper token verify
 
-      Or store a tap PAT: printf '%s' "$PAT" | tapper token set
+  After upgrading from an unsigned build, re-store the token once so
+  keychain ACLs match the signed binary:
+    tapper token import-gh
+
+  Or store a tap PAT: printf '%s' "$PAT" | tapper token set
     EOS
   end
 
   desc "Push github releases to any homebrew tap"
   homepage "https://github.com/marcelocantos/tapper"
-  url "https://github.com/marcelocantos/tapper/archive/refs/tags/v0.2.0.tar.gz"
-  version "0.2.0"
-  sha256 "c6490fd5819157e506dbf2f84fe24f358e1bf778f1819fdacbd82abcc9402d04"
+  url "https://github.com/marcelocantos/tapper/archive/refs/tags/v0.2.1.tar.gz"
+  version "0.2.1"
+  sha256 "7121c2561ca954b48eeed2d114ce6852e6acdbd928b0bd3789690d346daa9d58"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/tapper/releases/download/v0.2.0/tapper-0.2.0-darwin-arm64.tar.gz"
-      sha256 "f36e026d59e7f4cbb1fb2d725f01abcc2b50097b7b176b098b55d4338fdf638d"
+      url "https://github.com/marcelocantos/tapper/releases/download/v0.2.1/tapper-0.2.1-darwin-arm64.tar.gz"
+      sha256 "951dd0a84d16aec82f4f3f4da863d928e1d9340b7ee84eda4b5ca7a04b53c6b9"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/tapper/releases/download/v0.2.0/tapper-0.2.0-linux-amd64.tar.gz"
-      sha256 "2c928a2cee90e5f2b27160a6f037a3a58bbda6ed89d16a8be5f0b868971c45f9"
+      url "https://github.com/marcelocantos/tapper/releases/download/v0.2.1/tapper-0.2.1-linux-amd64.tar.gz"
+      sha256 "0f3045ad73792fda8f571d314f858c660c03e5cec0f1035d5ce2d4e73fb1d64a"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/tapper/releases/download/v0.2.0/tapper-0.2.0-linux-arm64.tar.gz"
-      sha256 "17980d5fc09f0312b79bc7ca9ab9117d416a62ed32fbbd104a5bd061cac955fb"
+      url "https://github.com/marcelocantos/tapper/releases/download/v0.2.1/tapper-0.2.1-linux-arm64.tar.gz"
+      sha256 "6e1e434f91d371ecea968f15723fec7eaf370fb37ce481f88ad22c21909d59f7"
     end
   end
 
