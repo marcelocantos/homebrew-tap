@@ -38,20 +38,22 @@ class Spyder < Formula
 
   desc "Http mcp server for cross-platform mobile device orchestration and agent-friendl"
   homepage "https://github.com/marcelocantos/spyder"
-  url "https://github.com/marcelocantos/spyder/archive/refs/tags/v0.85.0.tar.gz"
-  version "0.85.0"
-  sha256 "b0aa9a7bf19deffab6d877f37b1a18e61248e5aadc3c94ba4a00019b2827d750"
+  url "https://github.com/marcelocantos/spyder/archive/refs/tags/v0.86.0.tar.gz"
+  version "0.86.0"
+  sha256 "c58531e69d0c7b269d419db84a34000aeeec7119cc1fdfd0a9cb1437d460dcb9"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/spyder/releases/download/v0.85.0/spyder-0.85.0-darwin-arm64.tar.gz"
-      sha256 "6ed2320ddf98f02d3da077f4290c113912c4a320d74a37073dbe2ebfab88717f"
+      url "https://github.com/marcelocantos/spyder/releases/download/v0.86.0/spyder-0.86.0-darwin-arm64.tar.gz"
+      sha256 "9e684433a6e7d511a4186c4c2521495587bdd39b2ccbeed4e56a7bdca5fdaf92"
     end
   end
 
   def install
-    bin.install "bin/spyder" => "spyder"; bin.install "bin/spyder-killusbmuxd" => "spyder-killusbmuxd"; (libexec/"spyder").install "libexec/spyder/ios"
+    bin.install "bin/spyder" => "spyder"
+    bin.install "bin/spyder-killusbmuxd" => "spyder-killusbmuxd"
+    (libexec/"spyder").install "libexec/spyder/ios"
   end
 
   test do
