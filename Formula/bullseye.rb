@@ -5,27 +5,27 @@
 class Bullseye < Formula
   desc "Mcp server for managing targets  desired states with dependency tracking and fr"
   homepage "https://github.com/marcelocantos/bullseye"
-  url "https://github.com/marcelocantos/bullseye/archive/refs/tags/v0.48.0.tar.gz"
-  version "0.48.0"
-  sha256 "613813b5c4aca98e551b2b6448e70b5a695358cd28420e5636f8b50a5ba6493f"
+  url "https://github.com/marcelocantos/bullseye/archive/refs/tags/v0.49.0.tar.gz"
+  version "0.49.0"
+  sha256 "3be52b921007bd67db7e8e3df4e7ef1d41ea1c0319bc22e6d2969ed09a7844f8"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/bullseye/releases/download/v0.48.0/bullseye-0.48.0-darwin-arm64.tar.gz"
-      sha256 "83accbb612593f217e59b00d26d67de217d0ff6aabf7e6cecd40a44a0a9faf03"
+      url "https://github.com/marcelocantos/bullseye/releases/download/v0.49.0/bullseye-0.49.0-darwin-arm64.tar.gz"
+      sha256 "beade686bc39f68dfff3f3bd00cc06dad1064d02ed964ae7ab2b3d43ab7b701a"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/bullseye/releases/download/v0.48.0/bullseye-0.48.0-linux-amd64.tar.gz"
-      sha256 "ee77815ad7de778c858d6ef8333363ec991f8c8eaf9a0afe2056eaa9a9120e61"
+      url "https://github.com/marcelocantos/bullseye/releases/download/v0.49.0/bullseye-0.49.0-linux-amd64.tar.gz"
+      sha256 "b7dbf8acbd00f50b822dd039d63114a3cf347a1eaddfe6b2f62a2ec0146e8332"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/bullseye/releases/download/v0.48.0/bullseye-0.48.0-linux-arm64.tar.gz"
-      sha256 "c86631fd45586de9d4e982cc399ad3e2635765d27ef30ed244d193a6b01fb77d"
+      url "https://github.com/marcelocantos/bullseye/releases/download/v0.49.0/bullseye-0.49.0-linux-arm64.tar.gz"
+      sha256 "87e9a58b65c2e642d231b805fb82e614133b2d97dfb385f16e29213f6b303314"
     end
   end
 
