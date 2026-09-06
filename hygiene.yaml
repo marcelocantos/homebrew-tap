@@ -4,20 +4,21 @@
 #
 # This repo is a generated Homebrew tap (Formula/*.rb + README table), not an
 # application. Homebrew Releaser commits formula bumps from N source repos.
-# Floors are honest about that: no in-repo CI, no LICENSE, no test runner.
+# Floors are honest about that: CI exists but has never executed on GitHub,
+# and there is no test runner. Only file-verifiable gains raise a floor.
 
 schema_version: 1
 
 repo: homebrew-tap
 aspires: 3
 floors:            # per-dimension held-tier ratchet; below floor => DRIFT
-  correctness: 0   # no Actions; formula `test do` blocks never run
+  correctness: 0   # audit.yml exists but has never run on GitHub; no brew test
   security: 2      # GitHub secret scanning + push protection hold
   quality: 0       # brew style not in CI and currently fails on the live tap
   deps: 1          # bottle sha256 pins in every formula
   release: 1       # formula_renames.json; tap is a sink, not a versioned product
-  governance: 0    # README yes; LICENSE and .gitignore missing
-  build: 0         # no compile / no CI in this repo
+  governance: 1    # README + LICENSE + .gitignore all present
+  build: 0         # nothing compiles here; CI added but not yet exercised
   docs: 1          # README with generated project table
   perf: 0          # a bottle tap has no in-repo benchmarks
   vcs: 0           # no committed hooks; master unprotected
@@ -42,17 +43,27 @@ items:
       command: >-
         for f in Formula/*.rb; do ruby -c "$f" >/dev/null || exit 1; done
 
+  - id: correctness.url-resolution
+    dim: correctness
+    desc: Every url in every formula resolves (HTTP 200)
+    state: present
+    cadence: continuous
+    enforce: blocking
+    tier: 1
+    evidence:
+      command: ./scripts/check-formula-urls.sh
+
   - id: correctness.ci-audit
     dim: correctness
-    desc: CI runs brew audit --online and brew fetch on the tap
-    state: planned
+    desc: CI runs the URL-resolution gate on push, on PR, and daily
+    state: present
     cadence: continuous
     enforce: blocking
     tier: 1
     reason: >-
-      No GitHub Actions (workflows total_count 0). Formula tests and
-      brew audit --online never run; ged bottle URLs 404 undetected.
-    evidence: {absent: {ci_job: ci.yml#audit}}
+      .github/workflows/audit.yml runs `make check`. It has not executed on
+      GitHub yet, which is why the correctness floor is still 0.
+    evidence: {ci_job: audit.yml#check}
 
   - id: correctness.formula-tests
     dim: correctness
@@ -61,8 +72,10 @@ items:
     cadence: continuous
     enforce: blocking
     tier: 2
-    reason: Every formula has a test do block; nothing invokes brew test.
-    evidence: {absent: {ci_job: ci.yml#test}}
+    reason: >-
+      Every formula has a test do block; nothing invokes brew test.
+      brew test installs, so it needs a disposable runner, not a dev Mac.
+    evidence: {absent: {ci_job: audit.yml#test}}
 
   # =========================== SECURITY / SUPPLY ==========================
   - id: security.secret-scan
@@ -132,8 +145,10 @@ items:
     cadence: once-must-hold
     enforce: informational
     tier: 3
-    reason: No workflows exist to permission.
-    evidence: {absent: {ci_step: {workflow: ci.yml, name: permissions}}}
+    reason: >-
+      audit.yml declares contents: read at workflow level; not yet
+      audited against org-level default token permissions.
+    evidence: {ci_step: {workflow: audit.yml, name: permissions}}
 
   # ============================== CODE QUALITY ============================
   - id: quality.brew-style
@@ -144,9 +159,10 @@ items:
     enforce: warning
     tier: 2
     reason: >-
-      brew style is not wired to CI and currently reports offenses
-      (component order, line length) on generated formulae.
-    evidence: {absent: {ci_step: {workflow: ci.yml, name: brew style}}}
+      audit.yml runs brew style as an advisory (continue-on-error) job.
+      It still reports offences on generated formulae; those must be fixed
+      in each source repo's Releaser template, not by editing this tap.
+    evidence: {absent: {ci_step: {workflow: audit.yml, name: brew style}}}
 
   # =========================== DEPENDENCY HEALTH ==========================
   - id: deps.bottle-sha
@@ -160,6 +176,19 @@ items:
       command: >-
         for f in Formula/*.rb; do grep -q sha256 "$f" || exit 1; done
 
+  - id: deps.sha-matches-bytes
+    dim: deps
+    desc: Every declared sha256 matches the bytes actually served
+    state: present
+    cadence: per-release
+    enforce: warning
+    tier: 2
+    reason: >-
+      Downloads every archive, so it is not in the per-push gate; run it
+      before trusting a bulk formula refresh.
+    evidence:
+      command: ./scripts/check-formula-urls.sh --sha
+
   - id: deps.freshness
     dim: deps
     desc: Formula versions reviewed against upstream latest tags
@@ -172,25 +201,23 @@ items:
   # ========================== RELEASE & VERSIONING =======================
   - id: release.formula-renames
     dim: release
-    desc: formula_renames.json records tern→pigeon
+    desc: formula_renames.json records tern→pigeon and canopy→sawmill
     state: present
     cadence: once-must-hold
     enforce: warning
     tier: 1
-    evidence: {file: {path: formula_renames.json, matches: 'pigeon'}}
+    evidence: {file: {path: formula_renames.json, matches: 'sawmill'}}
 
   - id: release.all-generated
     dim: release
     desc: Every Formula/*.rb is generated by Homebrew Releaser (no snowflakes)
-    state: planned
+    state: present
     cadence: per-release
     enforce: warning
     tier: 2
-    reason: Formula/ged.rb is hand-rolled and outside the Releaser refresh loop.
     evidence:
-      absent:
-        command: >-
-          test -z "$(grep -L 'generated by Homebrew Releaser' Formula/*.rb)"
+      command: >-
+        test -z "$(grep -L 'generated by Homebrew Releaser' Formula/*.rb)"
 
   - id: release.changelog
     dim: release
@@ -229,22 +256,20 @@ items:
   - id: governance.license
     dim: governance
     desc: Root LICENSE present (formulae claim Apache-2.0; GitHub licenseInfo is null)
-    state: planned
+    state: present
     cadence: once-must-hold
     enforce: blocking
     tier: 1
-    reason: No root LICENSE; GitHub reports licenseInfo null.
-    evidence: {absent: {file: {path: LICENSE}}}
+    evidence: {file: {path: LICENSE, matches: 'Apache License'}}
 
   - id: governance.gitignore
     dim: governance
     desc: .gitignore covers OS/IDE/agent state
-    state: planned
+    state: present
     cadence: once-must-hold
     enforce: warning
     tier: 1
-    reason: No .gitignore; the tree is Formula/*.rb plus README.
-    evidence: {absent: {file: {path: .gitignore}}}
+    evidence: {file: {path: .gitignore}}
 
   - id: governance.squash-only
     dim: governance
@@ -290,12 +315,14 @@ items:
   - id: build.ci
     dim: build
     desc: CI builds or audits the tap on every push
-    state: planned
+    state: present
     cadence: continuous
     enforce: blocking
     tier: 2
-    reason: No .github/workflows; Releaser pushes formula bumps straight to master.
-    evidence: {absent: {ci_job: ci.yml#build}}
+    reason: >-
+      audit.yml gates every push and PR, and runs daily so an upstream
+      release deleted after the fact still surfaces. Never executed yet.
+    evidence: {ci_job: audit.yml#check}
 
   # ============================ DOCUMENTATION ============================
   - id: docs.readme
