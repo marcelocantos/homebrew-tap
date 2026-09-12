@@ -15,6 +15,7 @@ brew install marcelocantos/tap/<formula>
 | ----------------------------------------------------------- | -------------------------------------------------------------------------------- | -------------------------- |
 | [blurter](https://github.com/marcelocantos/blurter)         | Local notification daemon: apps spool events, blurter owns the credentials, poli | `brew install blurter`     |
 | [bullseye](https://github.com/marcelocantos/bullseye)       | Mcp server for managing targets  desired states with dependency tracking and fr  | `brew install bullseye`    |
+| [claudia](https://github.com/marcelocantos/claudia)         | Go library that embeds claude, grok, codex, bedrock, ollama, and cursor agents   | `brew install claudia`     |
 | [crosshair](https://github.com/marcelocantos/crosshair)     | Convergence executor daemon  runs strategies declared on bullseye targets towar  | `brew install crosshair`   |
 | [cv](https://github.com/marcelocantos/cv)                   | Build tool with make's dependency-graph model, minus 48 years of accumulated pai | `brew install cv`          |
 | [doit](https://github.com/marcelocantos/doit)               | Agentic gatekeeper for claude code  three-level policy engine, starlark rules,   | `brew install doit`        |
