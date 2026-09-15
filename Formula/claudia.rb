@@ -25,27 +25,27 @@ class Claudia < Formula
 
   desc "Go library that embeds claude, grok, codex, bedrock, ollama, and cursor agents"
   homepage "https://github.com/marcelocantos/claudia"
-  url "https://github.com/marcelocantos/claudia/archive/refs/tags/v0.33.0.tar.gz"
-  version "0.33.0"
-  sha256 "f85ac17599a0245d9598bea290306d6a8b69422a3342dea401261238166dafc7"
+  url "https://github.com/marcelocantos/claudia/archive/refs/tags/v0.34.0.tar.gz"
+  version "0.34.0"
+  sha256 "cac4c2569476c7f05fd9eea2403bc71aafea6f5a78679c793cae6d9b68d428bc"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/claudia/releases/download/v0.33.0/claudia-0.33.0-darwin-arm64.tar.gz"
-      sha256 "55daebede6de3ca69d960e7548b6ca2c6a102e4aa5ca03f46fa200e8ced0c871"
+      url "https://github.com/marcelocantos/claudia/releases/download/v0.34.0/claudia-0.34.0-darwin-arm64.tar.gz"
+      sha256 "14afa72d05897ba9c68ec4725684c9cd605dc4ea060011b2f5184472bd9f90da"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/claudia/releases/download/v0.33.0/claudia-0.33.0-linux-amd64.tar.gz"
-      sha256 "961d9714cbfd3396fd78bbe44c25c041a36483d512405fab917cf65a531f3172"
+      url "https://github.com/marcelocantos/claudia/releases/download/v0.34.0/claudia-0.34.0-linux-amd64.tar.gz"
+      sha256 "a1fdcf996266346d58e53695def28a79e761d5f3ecb4e3541ded7ebd43c60271"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/claudia/releases/download/v0.33.0/claudia-0.33.0-linux-arm64.tar.gz"
-      sha256 "1530f59510fa0596ccca41bc0e90df7b40df61441ad5c1cbaf6e95d9aebacbdd"
+      url "https://github.com/marcelocantos/claudia/releases/download/v0.34.0/claudia-0.34.0-linux-arm64.tar.gz"
+      sha256 "670aa237183b25474ffa462fb83e8b7648574394165abcce42bee0609c157c65"
     end
   end
 
