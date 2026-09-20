@@ -31,27 +31,27 @@ class Mnemo < Formula
 
   desc "Claude code transcript memory  mcp server for searching past sessions"
   homepage "https://github.com/marcelocantos/mnemo"
-  url "https://github.com/marcelocantos/mnemo/archive/refs/tags/v0.99.0.tar.gz"
-  version "0.99.0"
-  sha256 "535b27508bf6d14fd28121d9c3f4d473aefdbc74e4a1cb42b751be6bc207a63c"
+  url "https://github.com/marcelocantos/mnemo/archive/refs/tags/v0.100.0.tar.gz"
+  version "0.100.0"
+  sha256 "ad235022ed8e41c102230286b8d0cb90dee4680164021c198d6bae0fb3a46f1c"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/mnemo/releases/download/v0.99.0/mnemo-0.99.0-darwin-arm64.tar.gz"
-      sha256 "3b75a433c2a72053bf5b72da79c145d4ef6022db04a405b2bde63cb6ca3e313f"
+      url "https://github.com/marcelocantos/mnemo/releases/download/v0.100.0/mnemo-0.100.0-darwin-arm64.tar.gz"
+      sha256 "fe89dbb43238f0c09ddf626e6ec31f505b128fb5a8b640510ee9242bb295759a"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/mnemo/releases/download/v0.99.0/mnemo-0.99.0-linux-amd64.tar.gz"
-      sha256 "afb2023d9ee6047ca9424517a1f39701951038d4855ff129db56ec312499f555"
+      url "https://github.com/marcelocantos/mnemo/releases/download/v0.100.0/mnemo-0.100.0-linux-amd64.tar.gz"
+      sha256 "ce23e939ed8348ae75e85942a92e5ea7608d3837a418152791cebc4309f9cf7d"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/mnemo/releases/download/v0.99.0/mnemo-0.99.0-linux-arm64.tar.gz"
-      sha256 "11b5e70d97a25dc2db10eb6ffc0d6565a7cd847c763c6e6315c756de2cbc4ffb"
+      url "https://github.com/marcelocantos/mnemo/releases/download/v0.100.0/mnemo-0.100.0-linux-arm64.tar.gz"
+      sha256 "5930da579b3062f9a13e4b945e91d35bece94a1f79af6e923e0de4def27e9c1d"
     end
   end
 
