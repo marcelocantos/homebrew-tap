@@ -17,6 +17,7 @@ class Claudia < Formula
       "#{Dir.home}/go/bin",
       "#{Dir.home}/.local/bin",
       "#{Dir.home}/.grok/bin",
+      "#{Dir.home}/.bun/bin",
     ].join(":"), TERM: "xterm-256color", LANG: "en_US.UTF-8"
     keep_alive true
     log_path var/"log/claudia/broker.log"
@@ -25,32 +26,36 @@ class Claudia < Formula
 
   desc "Go library that embeds claude, grok, codex, bedrock, ollama, and cursor agents"
   homepage "https://github.com/marcelocantos/claudia"
-  url "https://github.com/marcelocantos/claudia/archive/refs/tags/v0.44.0.tar.gz"
-  version "0.44.0"
-  sha256 "bd9ee49c16bdc06e624dc9c774b8bb578eb3e0ea497e099240afd3cb336aef95"
+  url "https://github.com/marcelocantos/claudia/archive/refs/tags/v0.45.0.tar.gz"
+  version "0.45.0"
+  sha256 "009b394dd87e4710890b07fbe6fe3efffc723b78825afa374058f3c66bf2454a"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/claudia/releases/download/v0.44.0/claudia-0.44.0-darwin-arm64.tar.gz"
-      sha256 "7453009e91b9fb7b289cbc6e3226fdfd8502deea23298084d9a7f5c10c57d5dd"
+      url "https://github.com/marcelocantos/claudia/releases/download/v0.45.0/claudia-0.45.0-darwin-arm64.tar.gz"
+      sha256 "4dc87c64fcd362abdba5fd49c9bd20133be79576bbd8810414604f241d5b6d37"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/claudia/releases/download/v0.44.0/claudia-0.44.0-linux-amd64.tar.gz"
-      sha256 "7c5e5520dbb765ed0b62655ec74f6d9d036006e2aba473db1e1f4d2773bcc9e1"
+      url "https://github.com/marcelocantos/claudia/releases/download/v0.45.0/claudia-0.45.0-linux-amd64.tar.gz"
+      sha256 "50b422215bd80c1bb4995e060fc8c343b74420438d173ba5ab7b2d1b58e9c73d"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/claudia/releases/download/v0.44.0/claudia-0.44.0-linux-arm64.tar.gz"
-      sha256 "664e330974e2ddc4b96e0132bc4b85590c61519d33367db5d003ac5e9bad9021"
+      url "https://github.com/marcelocantos/claudia/releases/download/v0.45.0/claudia-0.45.0-linux-arm64.tar.gz"
+      sha256 "2ac9d1a1917346defe69bf66c7562ebf5cd880ca0c8152b0e7a6e6146a3f341a"
     end
   end
 
   def install
     bin.install "claudia" => "claudia"
+    # 🎯T157: the Bun sidecar that runs plan seats. The broker finds it beside
+    # its binary (share/claudia/sidecar) and installs its dependencies there on
+    # first start.
+    (share/"claudia").install "sidecar"
   end
 
   test do
