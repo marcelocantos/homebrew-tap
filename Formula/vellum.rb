@@ -48,27 +48,27 @@ class Vellum < Formula
 
   desc "Convert markdown, pdf, and rich text via mcp, cli, and clipboard"
   homepage "https://github.com/marcelocantos/vellum"
-  url "https://github.com/marcelocantos/vellum/archive/refs/tags/v0.23.0.tar.gz"
-  version "0.23.0"
-  sha256 "5aa23a848e7c6c389227e1425e324eac810b5ffb756044553979ca39a68323e9"
+  url "https://github.com/marcelocantos/vellum/archive/refs/tags/v0.24.0.tar.gz"
+  version "0.24.0"
+  sha256 "2dd0ec6ae3570cb1c3f61acc416548b955a918066046f9eb7d5b05471ae1c449"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/vellum/releases/download/v0.23.0/vellum-0.23.0-darwin-arm64.tar.gz"
-      sha256 "fb87c8892099ede0f492830143a7509d59a2d112a9a9d602eb0e4f47b36414c1"
+      url "https://github.com/marcelocantos/vellum/releases/download/v0.24.0/vellum-0.24.0-darwin-arm64.tar.gz"
+      sha256 "e055cf8767d3359e162e172b1bf930f3dc2ce1182ced08ec1ae815e828a9ba62"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/vellum/releases/download/v0.23.0/vellum-0.23.0-linux-amd64.tar.gz"
-      sha256 "d4f7f68a2ce3fbc632e30782d0dcaec4ec1c6edd23c67adf0ce691e5030930f0"
+      url "https://github.com/marcelocantos/vellum/releases/download/v0.24.0/vellum-0.24.0-linux-amd64.tar.gz"
+      sha256 "48204e08bbbe26ba128de7055a6c163675e59c428c9211993f2f1a8c104ce2ae"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/vellum/releases/download/v0.23.0/vellum-0.23.0-linux-arm64.tar.gz"
-      sha256 "66184d9d02ac1d53b2e982d564065dc3ac461e5af42d6021104409ad46e95fe1"
+      url "https://github.com/marcelocantos/vellum/releases/download/v0.24.0/vellum-0.24.0-linux-arm64.tar.gz"
+      sha256 "99be572636d9452169f420acb6f40fb42bdd7954938b6df77e6447c5093951c9"
     end
   end
 
