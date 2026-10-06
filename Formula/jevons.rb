@@ -13,29 +13,29 @@ class Jevons < Formula
 
   desc "Personal ai assistant  grok acp overseer, fleet of coding agents, voice-first w"
   homepage "https://github.com/marcelocantos/jevons"
-  url "https://github.com/marcelocantos/jevons/archive/refs/tags/v0.18.0.tar.gz"
-  version "0.18.0"
-  sha256 "d3cd4048b6a39c33aa5649b023ff8e2073bbdd291998ee4aa69b9090cf9470f0"
+  url "https://github.com/marcelocantos/jevons/archive/refs/tags/v0.19.0.tar.gz"
+  version "0.19.0"
+  sha256 "0c1e49ec4e67554b8aaa8e9631c8074fb9667e8a1216300c650c9e5393b528a3"
   license "Apache-2.0"
 
   depends_on "gh"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/jevons/releases/download/v0.18.0/jevons-0.18.0-darwin-arm64.tar.gz"
-      sha256 "05a534129b4e48330079e24ca77b5af6f488e16477ab5731040e6210a2b73bdb"
+      url "https://github.com/marcelocantos/jevons/releases/download/v0.19.0/jevons-0.19.0-darwin-arm64.tar.gz"
+      sha256 "eb6d765880bee40c816427f8ec2d697acc263c3d818a0dc8c95d9f9040c0a1d6"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/jevons/releases/download/v0.18.0/jevons-0.18.0-linux-amd64.tar.gz"
-      sha256 "a3b8829ed9c3dae535af36e0602087cab816b42bb7631d3044ae4448254c297e"
+      url "https://github.com/marcelocantos/jevons/releases/download/v0.19.0/jevons-0.19.0-linux-amd64.tar.gz"
+      sha256 "5ee173b4237144bcefd6e0dd2525141b4c1608a26832e8fbfad760c437984fe6"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/jevons/releases/download/v0.18.0/jevons-0.18.0-linux-arm64.tar.gz"
-      sha256 "59a12c028e011e6e6808506fb3e037c81f2277a72796b8c7c80380aca2e4919f"
+      url "https://github.com/marcelocantos/jevons/releases/download/v0.19.0/jevons-0.19.0-linux-arm64.tar.gz"
+      sha256 "fefc1f3f9ec9c29208562e3c8c6cda11b009e2c27d56184a67279cdefaa281c4"
     end
   end
 
