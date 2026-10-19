@@ -24,29 +24,29 @@ class Claudia < Formula
     error_log_path var/"log/claudia/broker.log"
   end
 
-  desc "Go library that embeds claude, grok, codex, bedrock, ollama, and cursor agents"
+  desc "Go library for embedding coding agents behind one seat api"
   homepage "https://github.com/marcelocantos/claudia"
-  url "https://github.com/marcelocantos/claudia/archive/refs/tags/v0.53.0.tar.gz"
-  version "0.53.0"
-  sha256 "bffc49ccd102d3dfb20deca0d7434162c17e59fea4454f06a9053fb30021a7c5"
+  url "https://github.com/marcelocantos/claudia/archive/refs/tags/v0.59.0.tar.gz"
+  version "0.59.0"
+  sha256 "9e0c671b1b6a34cc30ad34da2bb2612cae29902edc5a989a5b663c287d47bb98"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/claudia/releases/download/v0.53.0/claudia-0.53.0-darwin-arm64.tar.gz"
-      sha256 "dd8f18b24afba0b4e5bdca68b2fc187a04d9bc03294c5eabc96178b756e34b6f"
+      url "https://github.com/marcelocantos/claudia/releases/download/v0.59.0/claudia-0.59.0-darwin-arm64.tar.gz"
+      sha256 "a182cf55364144bb88ccfcd7b35de17a37c62f1325b7afda74e256aab799a245"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/claudia/releases/download/v0.53.0/claudia-0.53.0-linux-amd64.tar.gz"
-      sha256 "e2ef61d183e2746ce566f97532ddf00613941b6cc110a6fc4e896bdb0b4f63ff"
+      url "https://github.com/marcelocantos/claudia/releases/download/v0.59.0/claudia-0.59.0-linux-amd64.tar.gz"
+      sha256 "9529959905505efaaa2d0e63adcee21e091326486d450b3706bf02d4cca86d41"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/claudia/releases/download/v0.53.0/claudia-0.53.0-linux-arm64.tar.gz"
-      sha256 "5a138e19fb39fe0950a444a5fa215458e378faa815bc8a2af999918aa3ba6972"
+      url "https://github.com/marcelocantos/claudia/releases/download/v0.59.0/claudia-0.59.0-linux-arm64.tar.gz"
+      sha256 "ddbc7f44e56a71f2d44d519d6e0bb66d70838ce2844706d83c1d146c044e62d1"
     end
   end
 
