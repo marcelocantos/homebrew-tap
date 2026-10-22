@@ -8,7 +8,8 @@ class Spyder < Formula
     keep_alive true
     log_path var/"log/spyder.log"
     error_log_path var/"log/spyder.log"
-    environment_variables PATH: "/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin", SPYDER_ADDR: ":3030"
+    # adb (Homebrew prefix), xcrun and ioreg (system dirs) — all on std_service_path_env.
+    environment_variables PATH: std_service_path_env, SPYDER_ADDR: ":3030"
   end
 
   def caveats
@@ -33,20 +34,39 @@ class Spyder < Formula
       spyder spawns a bundled `ios` binary (go-ios) as a child
       process for iOS-17+ device discovery. No system LaunchDaemon
       or sudo is required — the tunnel runs in user-space mode.
+
+      launch_player's stream-player artifacts (🎯T102) ship under
+      #{opt_libexec}/spyder/player/:
+
+        desktop/player        — always included
+        android/player.apk    — included when the release build produced
+                                 one (player/android's native build is not
+                                 yet ported to sokol_gfx; see 🎯T34)
+
+      iOS is NOT shipped here: a Development/Ad Hoc signed Player.app
+      from one team fails ApplicationVerificationFailed on any other
+      developer's device — codesign/provisioning is per-developer and
+      not multi-tenant. Build player/ios locally with Xcode/xcodegen
+      (see player/Makefile and player/ios/CMakeLists.txt) and codesign
+      it yourself, or point SPYDER_PLAYER_IOS at a re-signed .app.
+      launch_player's resolution order is always:
+
+        path= override → SPYDER_PLAYER_* env → this libexec layout →
+        repo-relative dev build outputs
     EOS
   end
 
   desc "Http mcp server for cross-platform mobile device orchestration and agent-friendl"
   homepage "https://github.com/marcelocantos/spyder"
-  url "https://github.com/marcelocantos/spyder/archive/refs/tags/v0.97.0.tar.gz"
-  version "0.97.0"
-  sha256 "e2868482776c859a35862c30bba9c7075ec0e9ef5b28245c2bf8500095e4a37f"
+  url "https://github.com/marcelocantos/spyder/archive/refs/tags/v0.98.0.tar.gz"
+  version "0.98.0"
+  sha256 "18958302d6d8c9557703fe828a94c9211c57eb81c7338bec14705bdee123efec"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/spyder/releases/download/v0.97.0/spyder-0.97.0-darwin-arm64.tar.gz"
-      sha256 "b879305a4d60f2ade5394a9cfc5fcf6db8556bbaee138bbab970771a1db2a1ca"
+      url "https://github.com/marcelocantos/spyder/releases/download/v0.98.0/spyder-0.98.0-darwin-arm64.tar.gz"
+      sha256 "665353ad1b9ea2b36c6f1469779a854aba1ac88c4e0136bfec4faf6b8ceabd5e"
     end
   end
 
@@ -54,6 +74,15 @@ class Spyder < Formula
     bin.install "bin/spyder" => "spyder"
     bin.install "bin/spyder-killusbmuxd" => "spyder-killusbmuxd"
     (libexec/"spyder").install "libexec/spyder/ios"
+    # Stream player artifacts (🎯T102): desktop glass always ships; the Android
+    # debug APK is best-effort (player/android's native build is not yet
+    # ported to sokol — see 🎯T34) and simply absent from the tarball when
+    # release-package.sh couldn't produce one. iOS is deliberately excluded —
+    # see formula_includes.rb caveats.
+    (libexec/"spyder/player/desktop").install "libexec/spyder/player/desktop/player" if
+      File.exist?("libexec/spyder/player/desktop/player")
+    (libexec/"spyder/player/android").install "libexec/spyder/player/android/player.apk" if
+      File.exist?("libexec/spyder/player/android/player.apk")
   end
 
   test do
