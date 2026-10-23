@@ -14,7 +14,15 @@ class Spyder < Formula
 
   def caveats
     <<~EOS
-      spyder runs as a persistent HTTP MCP server on :3030.
+      spyder runs as a persistent HTTP MCP server on :3030 (all interfaces).
+      The MCP API has no authentication — required for LAN glasses and
+      app-channel dial-back. On laptops on untrusted Wi-Fi, use loopback-only:
+
+        brew services stop spyder
+        # Edit the service env (or reinstall with a local formula tweak) so
+        # SPYDER_ADDR is 127.0.0.1:3030 instead of :3030, then:
+        brew services start spyder
+
       It is NOT started automatically on install — start it with:
 
         brew services start spyder
@@ -58,15 +66,15 @@ class Spyder < Formula
 
   desc "Http mcp server for cross-platform mobile device orchestration and agent-friendl"
   homepage "https://github.com/marcelocantos/spyder"
-  url "https://github.com/marcelocantos/spyder/archive/refs/tags/v0.98.0.tar.gz"
-  version "0.98.0"
-  sha256 "18958302d6d8c9557703fe828a94c9211c57eb81c7338bec14705bdee123efec"
+  url "https://github.com/marcelocantos/spyder/archive/refs/tags/v0.99.0.tar.gz"
+  version "0.99.0"
+  sha256 "a22f9e09cdc04f2ce2f2682efb51b0108e654bb62f02055aa5de5a7b4f63effe"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/spyder/releases/download/v0.98.0/spyder-0.98.0-darwin-arm64.tar.gz"
-      sha256 "665353ad1b9ea2b36c6f1469779a854aba1ac88c4e0136bfec4faf6b8ceabd5e"
+      url "https://github.com/marcelocantos/spyder/releases/download/v0.99.0/spyder-0.99.0-darwin-arm64.tar.gz"
+      sha256 "05f73177073bbeb11c4c6450cc9cf67d4e9feb2507f9383622d5fa795af02e97"
     end
   end
 
