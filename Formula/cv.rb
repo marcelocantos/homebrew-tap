@@ -5,27 +5,27 @@
 class Cv < Formula
   desc "Build tool with make's dependency-graph model, minus 48 years of accumulated pai"
   homepage "https://github.com/marcelocantos/cv"
-  url "https://github.com/marcelocantos/cv/archive/refs/tags/v0.11.0.tar.gz"
-  version "0.11.0"
-  sha256 "ec7351cfcd425a53964321a975d6afa8c988f7f8e898a0a1f44207a39c3bf68c"
+  url "https://github.com/marcelocantos/cv/archive/refs/tags/v0.12.0.tar.gz"
+  version "0.12.0"
+  sha256 "821a6c2bfb4ae7538f35e63727bf04b3701051249568f235073b9c6949a810e0"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/cv/releases/download/v0.11.0/cv-0.11.0-darwin-arm64.tar.gz"
-      sha256 "f04fa53fb44e13b20551b81a4842f73a5aa959f7a9e1e56a2e843e1f94f9612f"
+      url "https://github.com/marcelocantos/cv/releases/download/v0.12.0/cv-0.12.0-darwin-arm64.tar.gz"
+      sha256 "4b76025ac2f828c53f728d792d22cb16d0bb174bb0e2142b94f70c18125ec3c1"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/cv/releases/download/v0.11.0/cv-0.11.0-linux-amd64.tar.gz"
-      sha256 "16f8452a3973f6491025bd5524ec7f1ba85e5f1f37342f3f53fc0aa01930e46c"
+      url "https://github.com/marcelocantos/cv/releases/download/v0.12.0/cv-0.12.0-linux-amd64.tar.gz"
+      sha256 "7f8294a92a657e1726fdb8579ac6262479760fdca8f84f4b74aa747873fca708"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/cv/releases/download/v0.11.0/cv-0.11.0-linux-arm64.tar.gz"
-      sha256 "c5b1b25df2305a1bbdb566a6df10e6c7cc10932fe493ebf3900f18c622e138d3"
+      url "https://github.com/marcelocantos/cv/releases/download/v0.12.0/cv-0.12.0-linux-arm64.tar.gz"
+      sha256 "85d37c541bc7aac93d3f6c8943cd2d8f54ee76f6e9b7c3992715446308171d4c"
     end
   end
 
