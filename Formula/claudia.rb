@@ -26,27 +26,27 @@ class Claudia < Formula
 
   desc "Go library for embedding coding agents behind one seat api"
   homepage "https://github.com/marcelocantos/claudia"
-  url "https://github.com/marcelocantos/claudia/archive/refs/tags/v0.72.0.tar.gz"
-  version "0.72.0"
-  sha256 "ba7088250255dc06ec96c3a2aab885bad83cc4a653327716351ea65d40b2ad52"
+  url "https://github.com/marcelocantos/claudia/archive/refs/tags/v0.73.0.tar.gz"
+  version "0.73.0"
+  sha256 "b299c0a4f6fd0ad1b74471e6f48ccb4376c5226a188d1ab324d898cf9526ac97"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/claudia/releases/download/v0.72.0/claudia-0.72.0-darwin-arm64.tar.gz"
-      sha256 "e77d96eee8bda06bb76d2b21646326569db6133ccd437896c8e53b4222cf75fc"
+      url "https://github.com/marcelocantos/claudia/releases/download/v0.73.0/claudia-0.73.0-darwin-arm64.tar.gz"
+      sha256 "9ca3ccccd782545db1e5e25865ad332a9b9deb741701de643379c8ba21df8067"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/claudia/releases/download/v0.72.0/claudia-0.72.0-linux-amd64.tar.gz"
-      sha256 "16cb91b58b9224770cc2e7d0ad6be73fc3b9f52765b40ad1d26a28614b825fbf"
+      url "https://github.com/marcelocantos/claudia/releases/download/v0.73.0/claudia-0.73.0-linux-amd64.tar.gz"
+      sha256 "b28c89c06a68cf7a300271c8dc6db1696b76f7bc6708c9a9dbfedc24cb6a9209"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/claudia/releases/download/v0.72.0/claudia-0.72.0-linux-arm64.tar.gz"
-      sha256 "74eb8c02881c37f982cce1bad219dfa30cdbc3bf584f6859ac71fcd2c6b3b440"
+      url "https://github.com/marcelocantos/claudia/releases/download/v0.73.0/claudia-0.73.0-linux-arm64.tar.gz"
+      sha256 "307f0601577d22b68af7a40ea9a3d61b331cc9baf55add43a9cc9dec056d7298"
     end
   end
 
