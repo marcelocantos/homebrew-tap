@@ -25,7 +25,7 @@ brew install marcelocantos/tap/<formula>
 | [mcpbridge](https://github.com/marcelocantos/mcpbridge)     | Transparent wrapper for mcp servers  keeps agent sessions alive across server r  | `brew install mcpbridge`   |
 | [mnemo](https://github.com/marcelocantos/mnemo)             | Claude code transcript memory  mcp server for searching past sessions            | `brew install mnemo`       |
 | [pageflip](https://github.com/marcelocantos/pageflip)       | Capture slides from a screen region whenever they change                         | `brew install pageflip`    |
-| [pigeon](https://github.com/marcelocantos/pigeon)           | Webtransport relay library (go + swift + kotlin + c + typescript) with e2e encry | `brew install pigeon`      |
+| [pigeon](https://github.com/marcelocantos/pigeon)           | Encrypted webtransport relay library for go, swift, kotlin, c and typescript     | `brew install pigeon`      |
 | [rustuml](https://github.com/marcelocantos/rustuml)         | Rust port of plantuml  single binary, no runtime dependencies                    | `brew install rustuml`     |
 | [sawmill](https://github.com/marcelocantos/sawmill)         | Mcp server for ast-level multi-language code transformations                     | `brew install sawmill`     |
 | [spyder](https://github.com/marcelocantos/spyder)           | Http mcp server for cross-platform mobile device orchestration and agent-friendl | `brew install spyder`      |
