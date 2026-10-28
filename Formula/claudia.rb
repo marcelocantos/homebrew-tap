@@ -34,19 +34,19 @@ class Claudia < Formula
   on_macos do
     on_arm do
       url "https://github.com/marcelocantos/claudia/releases/download/v0.73.0/claudia-0.73.0-darwin-arm64.tar.gz"
-      sha256 "9ca3ccccd782545db1e5e25865ad332a9b9deb741701de643379c8ba21df8067"
+      sha256 "3c4cfa1640940a5674a233cfce7b8269634b92f074f8795ad22930dad8b74dc0"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/marcelocantos/claudia/releases/download/v0.73.0/claudia-0.73.0-linux-amd64.tar.gz"
-      sha256 "b28c89c06a68cf7a300271c8dc6db1696b76f7bc6708c9a9dbfedc24cb6a9209"
+      sha256 "c000582dd599c8707d3897c0b78b902614b827fdb4a00a464bd5e00c90500e51"
     end
 
     on_arm do
       url "https://github.com/marcelocantos/claudia/releases/download/v0.73.0/claudia-0.73.0-linux-arm64.tar.gz"
-      sha256 "307f0601577d22b68af7a40ea9a3d61b331cc9baf55add43a9cc9dec056d7298"
+      sha256 "cee758bf79c5039d017c4151b89855d7b64a7ce1d5b1bd1381393df298733d7a"
     end
   end
 
