@@ -18,27 +18,27 @@ class Blurter < Formula
 
   desc "Local notification daemon: apps spool events, blurter owns the credentials, poli"
   homepage "https://github.com/marcelocantos/blurter"
-  url "https://github.com/marcelocantos/blurter/archive/refs/tags/v0.1.0.tar.gz"
-  version "0.1.0"
-  sha256 "2294585bb2e76af5e2edeb3907521c38aec35375f4c73df5934672b943be2e0e"
+  url "https://github.com/marcelocantos/blurter/archive/refs/tags/v0.2.0.tar.gz"
+  version "0.2.0"
+  sha256 "48c3a94387286ab7f94875a6f32eff62513e2b48da7f3063f18b095c021b13f9"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/blurter/releases/download/v0.1.0/blurter-0.1.0-darwin-arm64.tar.gz"
-      sha256 "3b7011e30d6380ca1b4b7050d130a8664987554344e27b83404ce33f097ac357"
+      url "https://github.com/marcelocantos/blurter/releases/download/v0.2.0/blurter-0.2.0-darwin-arm64.tar.gz"
+      sha256 "8f3f72d9de53bf09854b8136de517499b1ec5b88accb097b579bd03f8cce24b3"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/marcelocantos/blurter/releases/download/v0.1.0/blurter-0.1.0-linux-amd64.tar.gz"
-      sha256 "aa8e3eedc9e47c3bd7aa650243b6b711f7b9f5ea192edecea5382b87a2ac0c3c"
+      url "https://github.com/marcelocantos/blurter/releases/download/v0.2.0/blurter-0.2.0-linux-amd64.tar.gz"
+      sha256 "04ef8fd616ca85f51ffb99ea24510169c97df3f05e95586b3e7656b51700af9f"
     end
 
     on_arm do
-      url "https://github.com/marcelocantos/blurter/releases/download/v0.1.0/blurter-0.1.0-linux-arm64.tar.gz"
-      sha256 "b1f0bd8d6aef24de2282966e2b168395754b7391f2a8b1115a34c0e0ca349426"
+      url "https://github.com/marcelocantos/blurter/releases/download/v0.2.0/blurter-0.2.0-linux-arm64.tar.gz"
+      sha256 "e5fe419bae0afee550901aeacc973bf452eed162420dd7bb72cd09d303bdc2fd"
     end
   end
 
