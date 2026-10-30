@@ -18,7 +18,6 @@ brew install marcelocantos/tap/<formula>
 | [claudia](https://github.com/marcelocantos/claudia)         | Go library for embedding coding agents behind one seat api                       | `brew install claudia`     |
 | [crosshair](https://github.com/marcelocantos/crosshair)     | Convergence executor daemon  runs strategies declared on bullseye targets towar  | `brew install crosshair`   |
 | [cv](https://github.com/marcelocantos/cv)                   | Build tool with make's dependency-graph model, minus 48 years of accumulated pai | `brew install cv`          |
-| [den](https://github.com/marcelocantos/den)                 | Universal development environment manager. think virtualenv for everything       | `brew install den`         |
 | [doit](https://github.com/marcelocantos/doit)               | Agentic gatekeeper for claude code  three-level policy engine, starlark rules,   | `brew install doit`        |
 | [ged](https://github.com/marcelocantos/ge)                  | ge development daemon — dashboard and bridge for game servers and players        | `brew install ged`         |
 | [jevons](https://github.com/marcelocantos/jevons)           | Personal ai assistant  grok acp overseer, fleet of coding agents, voice-first w  | `brew install jevons`      |
