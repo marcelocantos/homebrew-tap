@@ -22,7 +22,7 @@ brew install marcelocantos/tap/<formula>
 | [ged](https://github.com/marcelocantos/ge)                  | ge development daemon — dashboard and bridge for game servers and players        | `brew install ged`         |
 | [jevons](https://github.com/marcelocantos/jevons)           | Personal ai assistant  grok acp overseer, fleet of coding agents, voice-first w  | `brew install jevons`      |
 | [mcpbridge](https://github.com/marcelocantos/mcpbridge)     | Transparent wrapper for mcp servers  keeps agent sessions alive across server r  | `brew install mcpbridge`   |
-| [mnemo](https://github.com/marcelocantos/mnemo)             | Claude code transcript memory  mcp server for searching past sessions            | `brew install mnemo`       |
+| [mnemo](https://github.com/marcelocantos/mnemo)             | Searchable memory for coding-agent session transcripts                           | `brew install mnemo`       |
 | [pageflip](https://github.com/marcelocantos/pageflip)       | Capture slides from a screen region whenever they change                         | `brew install pageflip`    |
 | [pigeon](https://github.com/marcelocantos/pigeon)           | Encrypted webtransport relay library for go, swift, kotlin, c and typescript     | `brew install pigeon`      |
 | [rustuml](https://github.com/marcelocantos/rustuml)         | Rust port of plantuml  single binary, no runtime dependencies                    | `brew install rustuml`     |
