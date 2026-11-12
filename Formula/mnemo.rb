@@ -31,27 +31,15 @@ class Mnemo < Formula
 
   desc "Searchable memory for coding-agent session transcripts"
   homepage "https://github.com/marcelocantos/mnemo"
-  url "https://github.com/marcelocantos/mnemo/archive/refs/tags/v0.116.0.tar.gz"
-  version "0.116.0"
-  sha256 "ba3daf1b7b6f18b0ecbc167013c045645618686f44e4b1eeb50344f48b18158f"
+  url "https://github.com/marcelocantos/mnemo/archive/refs/tags/v0.117.0.tar.gz"
+  version "0.117.0"
+  sha256 "b81dc86251761fb3a38b9197c11e054c0c65c4f7d3263ebcfe5a2d7802a5bcb4"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/mnemo/releases/download/v0.116.0/mnemo-0.116.0-darwin-arm64.tar.gz"
-      sha256 "a831bc39f04e0a54d12e4f29d3252d4af084db9495857cbfbdc33666fe0caaa5"
-    end
-  end
-
-  on_linux do
-    on_intel do
-      url "https://github.com/marcelocantos/mnemo/releases/download/v0.116.0/mnemo-0.116.0-linux-amd64.tar.gz"
-      sha256 "29532a68097a19d9b5ed636f485e7c2ea6645f0e37ab4ceafbb462bfeaa51d3b"
-    end
-
-    on_arm do
-      url "https://github.com/marcelocantos/mnemo/releases/download/v0.116.0/mnemo-0.116.0-linux-arm64.tar.gz"
-      sha256 "1001173527ef0156151e0bc15f540d982701fe0662337742eb31d26a895f0c39"
+      url "https://github.com/marcelocantos/mnemo/releases/download/v0.117.0/mnemo-0.117.0-darwin-arm64.tar.gz"
+      sha256 "e533ef9a936ee045b090ffdc9ccaaee27a0a450fa3fbfb1981e430184819b015"
     end
   end
 
