@@ -31,15 +31,15 @@ class Mnemo < Formula
 
   desc "Searchable memory for coding-agent session transcripts"
   homepage "https://github.com/marcelocantos/mnemo"
-  url "https://github.com/marcelocantos/mnemo/archive/refs/tags/v0.117.0.tar.gz"
-  version "0.117.0"
-  sha256 "b81dc86251761fb3a38b9197c11e054c0c65c4f7d3263ebcfe5a2d7802a5bcb4"
+  url "https://github.com/marcelocantos/mnemo/archive/refs/tags/v0.118.0.tar.gz"
+  version "0.118.0"
+  sha256 "c65ae5ead7c96e82aa24a735c11509531ca2f680d10267aeda3b131ca9c3a9ec"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/mnemo/releases/download/v0.117.0/mnemo-0.117.0-darwin-arm64.tar.gz"
-      sha256 "e533ef9a936ee045b090ffdc9ccaaee27a0a450fa3fbfb1981e430184819b015"
+      url "https://github.com/marcelocantos/mnemo/releases/download/v0.118.0/mnemo-0.118.0-darwin-arm64.tar.gz"
+      sha256 "bd45096d6763aa0c5f2cc3061cd186cca5e7278a981d90767e8540afe7ca0a7e"
     end
   end
 
