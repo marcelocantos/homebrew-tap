@@ -31,6 +31,7 @@ class Bullseye < Formula
 
   def install
     bin.install "bullseye" => "bullseye"
+    prefix.install "THIRDPARTY.txt"
   end
 
   test do
