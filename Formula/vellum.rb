@@ -48,15 +48,15 @@ class Vellum < Formula
 
   desc "Convert markdown, pdf, and rich text via mcp, cli, and clipboard"
   homepage "https://github.com/marcelocantos/vellum"
-  url "https://github.com/marcelocantos/vellum/archive/refs/tags/v0.43.0.tar.gz"
-  version "0.43.0"
-  sha256 "10839974904f2ed700ad1b708a2ca54b5ebae8820afb44599abc255b62b15b9f"
+  url "https://github.com/marcelocantos/vellum/archive/refs/tags/v0.44.0.tar.gz"
+  version "0.44.0"
+  sha256 "79ce2fd9abe2264f0882246922a2525e49c9a1fa67ff3f86a96fb2b1e085d621"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/marcelocantos/vellum/releases/download/v0.43.0/vellum-0.43.0-darwin-arm64.tar.gz"
-      sha256 "c01d099c8ddf5e7c7a03b00217c89a1d4694f053ef2d2149525874bfecffea8c"
+      url "https://github.com/marcelocantos/vellum/releases/download/v0.44.0/vellum-0.44.0-darwin-arm64.tar.gz"
+      sha256 "0e4549c9aed20a765c2d762bbc658f57bd70092c6c02028a5a68f3f89019fc39"
     end
   end
 
